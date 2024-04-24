@@ -1,5 +1,3 @@
 # Maxx-Energy-App
-
+Noman Raghib
 Chris was here
-
-Henry was here. Waiting for Norman and John
