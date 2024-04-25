@@ -1,3 +1,7 @@
 # Maxx-Energy-App
+
 Noman Raghib
-Chris was here
+
+Chris Staunton
+
+Henry Acosta
