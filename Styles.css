@@ -1,5 +1,9 @@
 body {
-
+  background-image: url(background-Image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 header {
