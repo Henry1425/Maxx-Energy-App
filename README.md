@@ -1,3 +1,5 @@
 # Maxx-Energy-App
 Noman Raghib
-Chris was here
+# Maxx-Energy-App
+John was here
+chris was here.
