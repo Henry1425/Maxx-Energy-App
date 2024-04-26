@@ -1,11 +1,52 @@
-header {
-
+html {
+    height: 100%;
+    width: 100%;
+}
+/* Lining up the navagation links */
+ul {
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
+/* Added Background Image to Landing Page */
 body {
+  background-image: url(background-Image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 
+  position:absolute;
+  top:0; bottom:0; right:0; left:0;
+}
+
+header {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(200, 0, 0, 0.5); /*Temporary (helps determine size/location)*/
+    text-align: center;
+}
+
+.PageLinks {
+    width: 100%;
+    height: 5%;
+    background-color: rgba(200, 200, 0, 0.5); /*Temporary (helps determine size/location)*/
+    text-align: center;
+}
+
+.CenterPage {
+    width: 75%;
+    height: 80%;
+    background-color: rgba(0, 200, 0, 0.5); /*Temporary (helps determine size/location)*/
+    text-align: center;
+    margin: auto;
 }
 
 footer {
-
+    width: 75%;
+    height: 20%;
+    background-color: rgba(0, 0, 200, 0.5); /*Temporary (helps determine size/location)*/
+    text-align: center;
+    margin: auto;
 }
