@@ -36,7 +36,7 @@ a {
 
 /* Added Background Image to Landing Page */
 body {
-  background-image: url(./images/background-Image.jpg);
+  background-image: url(../images/background-Image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -74,55 +74,8 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-.card_Row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 
-    width: 95%;
-    height: 95%;
 
-    margin: auto;
-}
-.card_Column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 30%;
-    height: 100%;
-
-    margin: auto;
-}
-.card_plain {
-    width: 100%;
-    height: 30%;
-    background-color: rgba(0, 200, 200, 0.5); /*Temporary (helps determine size/location)*/
-
-    border: 2px solid blue;
-    border-radius: 10px;
-    border-style: dotted dotted inset dotted;
-
-    margin: auto;
-}
-.card_plain img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0 0;
-}
-.card_plain h1 {
-    color: white;
-    font-size: 10px;
-    /* font-weight: bold; */
-}
-.card_plain p {
-    font-style: italic;
-    font-size: 7.5px;
-}
-.card_plain a {
-    font-size: 5px;
-    color: blue;
-}
 
 footer {
     width: 75%;
