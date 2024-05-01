@@ -1,4 +1,9 @@
 # Maxx-Energy-App
-John Allen
+
 Noman Raghib
-Chris was here
+
+Chris Staunton
+
+Henry Acosta
+
+John Allen
