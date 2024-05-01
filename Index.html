@@ -4,11 +4,12 @@
     <meta charset="ISO-8859-1" />
 
     <link rel="stylesheet" type="text/css" href="./styles/Styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/Cards_LP.css" />
 
     <script type="text/javascript" src="./js/Script.js"></script>
   </head>
 
-  <body style="background-image: url(./images/background-Image.jpg);">
+  <body>
     <header>Header</header>
     <ul>
       <li>
@@ -22,6 +23,14 @@
       </li>
     </ul>
 
+
+    <div class="cardModal" id="cardModal_ID">
+      <div id="cardModal_Stuff_A" style="background-color: rgba(200, 0, 0, 0.5);"><header>Something didn't work</header></div>
+      <div id="cardModal_Stuff_B" style="background-color: rgba(0, 200, 0, 0.5);"><p>Probally something wrong on JavaScript end</p></div>
+      <div id="cardModal_Stuff_C" style="background-color: rgba(0, 0, 200, 0.5);"><footer>What happened?</footer></div>
+      <div><button onclick="close_cardModal()">Close</button></div>
+    </div>
+
     <div class="CenterPage">
 
       <div class="card_Row">
@@ -34,6 +43,9 @@
             <p>A general description of the company or somthing relating to it. Anything at all at this point. 
               This is just sample text for testing purposes.</p>
             <div style="background-color: rgba(200, 200, 0, 0.5); border-radius: 0 0 10px 10px; height: 16%;">
+              
+              <button value="Sample Title/-/sample text for testing/-/A footer?" onclick="open_cardModal(this.value)">Open A</button>
+
               <a href="">www.(804).f@ke_L!nk</a>
             </div>
           </div>
@@ -44,6 +56,7 @@
             <p style="color: white">Can change colors, shapes, etc later</p>
             <div style="background-color: rgba(0, 200, 200, 0.5); border-radius: 0px; height: 20%;">
               <a href="" style="color: yellow">another/www.f@ke_L!nk-123\abc</a>
+              <button value="Another Title/-/a b c d e f g/-/anything" onclick="open_cardModal(this.value)">Open B</button>
             </div>
           </div>
     
@@ -112,6 +125,13 @@
 
     </div>
 
-    <footer></footer>
+
+    
+
+    <footer>
+      <section class="one"></section>
+      <section class="two"></section>
+      <section class="three"></section>
+    </footer>
   </body>
 </html>
