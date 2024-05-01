@@ -78,10 +78,33 @@ header {
 
 
 
-footer {
-    width: 75%;
-    height: 20%;
-    background-color: rgba(0, 0, 200, 0.5); /*Temporary (helps determine size/location)*/
-    text-align: center;
-    margin: auto;
-}
+footer  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+      width: 75%;
+     height: 20%;
+     margin: auto;
+ }
+ 
+      .one {
+         width:  33%;
+         height: 100px;
+         /* margin-right: 15px; */
+         background: blue;
+     }
+ 
+     .two {
+         width: 33%;
+         height: 100px;
+         /* margin-right: 15px; */
+         background:darkcyan;
+     }
+ 
+     .three {
+         width: 33%;
+         height: 100px;
+         background:rgba(0, 0, 200, 0.5);
+         /* float: right; */
+     }
+ 
