@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles/ContactPage.css" />
+    <title>Conact Page</title>
+  </head>
+  <body>
+    <header>Header</header>
+    <div class="navbar">
+      <ul>
+        <li>
+          <button class="btn"><a href="index.html">Home</a></button>
+        </li>
+        <li>
+          <button class="btn"><a href="#Contact.html">Contact</a></button>
+        </li>
+        <li>
+          <button class="btn"><a href="AboutPage.html">About</a></button>
+        </li>
+      </ul>
+    </div>
+    <div style="background-color: rgba(126, 143, 159, 0.514)" class="formarea">
+      <h3>Contact Form</h3>
+
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

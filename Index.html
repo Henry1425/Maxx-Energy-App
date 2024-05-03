@@ -3,7 +3,7 @@
   <head>
     <meta charset="ISO-8859-1" />
 
-    <link rel="stylesheet" type="text/css" href="./styles/Styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/Styles.css" />
     <link rel="stylesheet" type="text/css" href="./styles/Cards_LP.css" />
 
     <script type="text/javascript" src="./js/Script.js"></script>
@@ -11,17 +11,22 @@
 
   <body>
     <header>Header</header>
-    <ul>
-      <li>
-        <button class="btn"><a href="index.html">Home</a></button>
-      </li>
-      <li>
-        <button class="btn"><a href="#contact">Contact</a></button>
-      </li>
-      <li>
-        <button class="btn"><a href="AboutPage.html">About</a></button>
-      </li>
-    </ul>
+    <button style="float: right" class="btn">
+      <a href="Login.html">Login</a>
+    </button>
+    <div class="navbar">
+      <ul>
+        <li>
+          <button class="btn"><a href="index.html">Home</a></button>
+        </li>
+        <li>
+          <button class="btn"><a href="Contact.html">Contact</a></button>
+        </li>
+        <li>
+          <button class="btn"><a href="AboutPage.html">About</a></button>
+        </li>
+      </ul>
+    </div>
 
 
     <div class="cardModal" id="cardModal_ID">
@@ -40,11 +45,8 @@
       </div>
       <div><button onclick="close_cardModal()">Close</button></div>
     </div>
-
     <div class="CenterPage">
-
       <div class="card_Row">
-
         <div class="card_Column">
 
           <div class="card_plain" style="background-color: rgba(200, 0, 0, 0.75);">
@@ -98,9 +100,8 @@
               </button>
             </div>
           </div>
-  
         </div>
-  
+
         <div class="card_Column">
   
           <div class="card_plain" style="background-color: rgba(200, 200, 200, 0.5); border-style: double; border: 2px solid green;">
@@ -136,9 +137,8 @@
               </button> -->
             </div>
           </div>
-          
         </div>
-  
+
         <div class="card_Column">
     
           <div class="card_plain">
@@ -157,20 +157,10 @@
               </button>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </div>
 
-
-    
-
-    <footer>
-      <section class="one"></section>
-      <section class="two"></section>
-      <section class="three"></section>
-    </footer>
+    <footer><i class="fa-brands fa-facebook"></i></footer>
   </body>
 </html>
