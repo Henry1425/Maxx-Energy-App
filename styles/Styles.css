@@ -1,3 +1,4 @@
+
 html {
     height: 100%;
     width: 100%;
@@ -80,60 +81,36 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-.card_Row {
+
+
+
+footer  {
     display: flex;
     flex-direction: row;
     justify-content: center;
+      width: 75%;
+     height: 20%;
+     margin: auto;
+ }
 
-    width: 95%;
-    height: 95%;
+      .one {
+         width:  33%;
+         height: 100px;
+         /* margin-right: 15px; */
+         background: blue;
+     }
 
-    margin: auto;
-}
-.card_Column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+     .two {
+         width: 33%;
+         height: 100px;
+         /* margin-right: 15px; */
+         background:darkcyan;
+     }
 
-    width: 30%;
-    height: 100%;
+     .three {
+         width: 33%;
+         height: 100px;
+         background:rgba(0, 0, 200, 0.5);
+         /* float: right; */
+     }
 
-    margin: auto;
-}
-.card_plain {
-    width: 100%;
-    height: 30%;
-    background-color: rgba(0, 200, 200, 0.5); /*Temporary (helps determine size/location)*/
-
-    border: 2px solid blue;
-    border-radius: 10px;
-    border-style: dotted dotted inset dotted;
-
-    margin: auto;
-}
-.card_plain img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0 0;
-}
-.card_plain h1 {
-    color: white;
-    font-size: 10px;
-    /* font-weight: bold; */
-}
-.card_plain p {
-    font-style: italic;
-    font-size: 7.5px;
-}
-.card_plain a {
-    font-size: 5px;
-    color: blue;
-}
-
-footer {
-    width: 75%;
-    height: 20%;
-    /* background-color: rgba(0, 0, 200, 0.5); Temporary (helps determine size/location) */
-    text-align: center;
-    margin: auto;
-}
