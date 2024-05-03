@@ -68,12 +68,13 @@ header {
     /*  */
     width: 75%;
     height: 80%;
-    background-color: rgba(0, 200, 0, 0.5); /*Temporary (helps determine size/location)*/
+    background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border-radius: 0 0 5px 5px; */
 }
 
 

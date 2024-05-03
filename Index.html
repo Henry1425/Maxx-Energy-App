@@ -25,9 +25,19 @@
 
 
     <div class="cardModal" id="cardModal_ID">
-      <div id="cardModal_Stuff_A" style="background-color: rgba(200, 0, 0, 0.5);"><header>Something didn't work</header></div>
-      <div id="cardModal_Stuff_B" style="background-color: rgba(0, 200, 0, 0.5);"><p>Probally something wrong on JavaScript end</p></div>
-      <div id="cardModal_Stuff_C" style="background-color: rgba(0, 0, 200, 0.5);"><footer>What happened?</footer></div>
+      <div style="background-color: rgba(255, 255, 255, .75);">
+        <br/>
+        <header id="cardModal_Stuff_A">Something didn't work</header>
+      </div>
+      <div style="background-color: rgba(255, 255, 255, 1);">
+        <p id="cardModal_Stuff_B">Probally something wrong on JavaScript end</p>
+      </div>
+      <div style="background-color: rgba(255, 255, 255, 1);">
+        <br/>
+        <footer>
+          <a id="cardModal_Stuff_C" href="">What happened?</a>
+        </footer>
+      </div>
       <div><button onclick="close_cardModal()">Close</button></div>
     </div>
 
@@ -37,35 +47,55 @@
 
         <div class="card_Column">
 
-          <div class="card_plain">
-            <img src="./images/BlankSampleImage.jpg"/>
-            <h1>Company Title</h1>
-            <p>A general description of the company or somthing relating to it. Anything at all at this point. 
-              This is just sample text for testing purposes.</p>
-            <div style="background-color: rgba(200, 200, 0, 0.5); border-radius: 0 0 10px 10px; height: 16%;">
-              
-              <button value="Sample Title/-/sample text for testing/-/A footer?" onclick="open_cardModal(this.value)">Open A</button>
-
-              <a href="">www.(804).f@ke_L!nk</a>
+          <div class="card_plain" style="background-color: rgba(200, 0, 0, 0.75);">
+            <div class="cardPlain_i">
+              <img src="./images/BlankSampleImage.jpg" style="width: 50%; height: 75%; padding: 15px;"/>
+            </div>
+            <div class="cardPlain_h">
+              <h1>Company Title</h1>
+            </div>
+            <div class="cardPlain_p">
+              <p>A general description of the company or somthing relating to it. Anything at all at this point. 
+                This is just sample text for testing purposes.</p>
+            </div>
+            <div class="cardPlain_b" style="background-color: rgba(0, 200, 0, 0.5);">
+              <button style="border: red; border-style: dotted dashed solid double; color:brown background-color: blue;" value="Sample Title/-/sample text for testing/-/www.(804).f@ke_L!nk/-/Index.html" onclick="open_cardModal(this.value)">
+                Open A
+              </button>
             </div>
           </div>
     
           <div class="card_plain" style="background-color: rgba(0, 0, 200, 0.5); border-style: inset; border: 5px solid red;">
-            <img src="./images/BlankSampleImage.jpg" style="width: 50%; border-radius: 0 0 10px 10px;"/>
-            <h1 style="color: orange">This is just a random sample template</h1>
-            <p style="color: white">Can change colors, shapes, etc later</p>
-            <div style="background-color: rgba(0, 200, 200, 0.5); border-radius: 0px; height: 20%;">
-              <a href="" style="color: yellow">another/www.f@ke_L!nk-123\abc</a>
-              <button value="Another Title/-/a b c d e f g/-/anything" onclick="open_cardModal(this.value)">Open B</button>
+            <div class="cardPlain_i">
+              <img src="./images/BlankSampleImage.jpg" style="width: 50%; border-radius: 0 0 10px 10px;"/>
+            </div>
+            <div class="cardPlain_h">
+              <h1 style="color: orange">This is just a random sample template</h1>
+            </div>
+            <div class="cardPlain_p">
+              <p style="color: white">Can change colors, shapes, etc later</p>
+            </div>
+            <div class="cardPlain_b" style="background-color: rgba(0, 200, 200, 0.5); border-radius: 0px;">
+              <button style="border-radius: 4px; font-style: italic; font-weight: bold; color: white; background-color: black;" value="Another Title/-/a b c d e f g/-/another/www.f@ke_L!nk-123\abc/-/Index.html" onclick="open_cardModal(this.value)">
+                Open B
+              </button>
             </div>
           </div>
     
-          <div class="card_plain" style="background-color: rgba(200, 0, 200, 0.5); border-style: inset; border: 1px solid purple; border-radius: 0px;">
-            <img src="./images/BlankSampleImage.jpg" style="border-radius: 0px;"/>
-            <h1 style="color: green">Difficult to read this</h1>
-            <p style="color: red">abcdefghijk... something, something, something/?</p>
-            <div style="background-color: rgba(200, 200, 200, 0.5); border-radius: 0px; height: 21%;">
-              <a href="" style="color: indigo">more/www.f@ke_L!nk$-123\abc</a>
+          <div class="card_plain" style="background-color: rgba(200, 0, 200, 1); border-style: inset; border: 1px solid purple; border-radius: 0px;">
+            <div class="cardPlain_i">
+              <img src="./images/BlankSampleImage.jpg" style="border-radius: 0px;"/>
+            </div>
+            <div class="cardPlain_h">
+              <h1 style="color: green">Difficult to read this</h1>
+            </div>
+            <div class="cardPlain_p">
+              <p style="color: red">abcdefghijk... something, something, something/?</p>
+            </div>
+            <div class="cardPlain_b" style="background-color: rgba(200, 200, 200, 0.5); border-radius: 0px;">
+              <button style="border: yellow; border-style: dashed; border-radius: 0px; font-style: italic; color: white; background-color: purple;" value="sample/-/SAMPLE/-/s.a/m(p:l,e/-/Index.html" onclick="open_cardModal(this.value)">
+                Open C
+              </button>
             </div>
           </div>
   
@@ -73,50 +103,59 @@
   
         <div class="card_Column">
   
-          <div class="card_plain">
-            <img src="./images/BlankSampleImage.jpg"/>
-            <h1>123</h1>
-            <p>abc</p>
-            <a href="">Fake Link</a>
+          <div class="card_plain" style="background-color: rgba(200, 200, 200, 0.5); border-style: double; border: 2px solid green;">
+            <div class="cardPlain_i" style="height: 0%;">
+              <img src="./images/BlankSampleImage.jpg"/>
+            </div>
+            <div class="cardPlain_h" style="height: 15%;">
+              <h1 style="color: white; font-style: italic; font-size: 60%;">Header</h1>
+            </div>
+            <div class="cardPlain_p" style="height: 60%; width: 25%; margin:auto;">
+              <p style="font-weight: bold; font-style: normal; font-size: 60%;">More info: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40</p>
+            </div>
+            <div class="cardPlain_b" style="background-color: rgba(20, 20, 20, 0.5);">
+              <button value="Extra/-/More place holder text/-/Link/-/Index.html" onclick="open_cardModal(this.value)" style="border-radius: 0px; font-size: 7px; font-weight: normal;">
+                Learn More
+              </button>
+            </div>
           </div>
     
-          <div class="card_plain">
-            <img src="./images/BlankSampleImage.jpg"/>
-            <h1>456</h1>
-            <p>def</p>
-            <a href="">Fake Link</a>
-          </div>
-    
-          <div class="card_plain">
-            <img src="./images/BlankSampleImage.jpg"/>
-            <h1>789</h1>
-            <p>ghi</p>
-            <a href="">Fake Link</a>
+          <div class="card_plain" style="background-color: rgba(0, 200, 0, 1); border-style: outset; border: 8px solid yellow; border-radius: 0px;">
+            <div class="cardPlain_i" style="height: 60%;">
+              <img style="border-radius: 0 0 0 0;" src="./images/BlankSampleImage.jpg"/>
+            </div>
+            <div class="cardPlain_h">
+              <h1 style="color: purple">Another Title</h1>
+            </div>
+            <div class="cardPlain_p">
+              <p style="font-style: normal; font-size: 50%;">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+            </div>
+            <div class="cardPlain_b" style="height: 0%;">
+              <!-- <button value="A/-/B/-/C/-/Index.html" onclick="open_cardModal(this.value)">
+                Button
+              </button> -->
+            </div>
           </div>
           
         </div>
   
         <div class="card_Column">
-  
-          <div class="card_plain">
-            <img src="./images/BlankSampleImage.jpg"/>
-            <h1>123</h1>
-            <p>abc</p>
-            <a href="">Fake Link</a>
-          </div>
     
           <div class="card_plain">
-            <img src="./images/BlankSampleImage.jpg"/>
-            <h1>456</h1>
-            <p>def</p>
-            <a href="">Fake Link</a>
-          </div>
-    
-          <div class="card_plain">
-            <img src="./images/BlankSampleImage.jpg"/>
-            <h1>789</h1>
-            <p>ghi</p>
-            <a href="">Fake Link</a>
+            <div class="cardPlain_i">
+              <img src="./images/BlankSampleImage.jpg"/>
+            </div>
+            <div class="cardPlain_h">
+              <h1>123</h1>
+            </div>
+            <div class="cardPlain_p">
+              <p>abc</p>
+            </div>
+            <div class="cardPlain_b">
+              <button value="Testing/-/abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc/-/Another.Link.That.Leads.Back.To.This.Page/-/Index.html" onclick="open_cardModal(this.value)">
+                Button
+              </button>
+            </div>
           </div>
 
         </div>
