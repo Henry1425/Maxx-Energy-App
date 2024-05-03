@@ -2,11 +2,18 @@ html {
     height: 100%;
     width: 100%;
 }
+/* background for navbar */
+.navbar {
+    background-color: rgba(126, 143, 159, 0.514);
+  }
+
+
 /* Lining up the navagation links */
 ul {
 display: flex;
 flex-direction: row;
 justify-content: center;
+list-style:none;
 }
 
 .btn {
@@ -36,12 +43,11 @@ a {
 
 /* Added Background Image to Landing Page */
 body {
-  background-image: url(./images/background-Image.jpg);
+  background-image: url(../images/background-Image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-
   position:absolute;
   top:0; bottom:0; right:0; left:0;
 }
@@ -127,7 +133,7 @@ header {
 footer {
     width: 75%;
     height: 20%;
-    background-color: rgba(0, 0, 200, 0.5); /*Temporary (helps determine size/location)*/
+    /* background-color: rgba(0, 0, 200, 0.5); Temporary (helps determine size/location) */
     text-align: center;
     margin: auto;
 }
