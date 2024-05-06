@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/* Lining up the navagation links */
+.title {
+  color:#dbe8ec;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar {
+  background-color: rgba(126, 143, 159, 0.514);
+  /* border: 2px solid #0099CC;
+  border-radius: 6px; */
+}
+
+section {
+  width: 50%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:auto;
+  font-size:larger
+}
+
+p {
+  background-color: rgba(126, 143, 159, 0.88);
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+}
+
+
+ul {
+display: flex;
+flex-direction: row;
+justify-content: center;
+list-style: none;
+}
+
+.btn {
+
+  color: #0099CC;
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+ /* border: none;*/
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color:aqua
+}
+
+/* Added Background Image to Landing Page */
+body {
+background-image: url(../images/background-Image.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+
+position:absolute;
+top:0; bottom:0; right:0; left:0;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  background-color: rgba(200, 0, 0, 0.5); /*Temporary (helps determine size/location)*/
+  text-align: center;
+}
