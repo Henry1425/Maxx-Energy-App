@@ -3,11 +3,18 @@ html {
     height: 100%;
     width: 100%;
 }
+/* background for navbar */
+.navbar {
+    background-color: rgba(126, 143, 159, 0.514);
+  }
+
+
 /* Lining up the navagation links */
 ul {
 display: flex;
 flex-direction: row;
 justify-content: center;
+list-style:none;
 }
 
 .btn {
@@ -42,7 +49,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-
   position:absolute;
   top:0; bottom:0; right:0; left:0;
 }
@@ -68,12 +74,13 @@ header {
     /*  */
     width: 75%;
     height: 80%;
-    background-color: rgba(0, 200, 0, 0.5); /*Temporary (helps determine size/location)*/
+    background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border-radius: 0 0 5px 5px; */
 }
 
 
@@ -81,12 +88,12 @@ header {
 footer  {
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
       width: 75%;
      height: 30%;
      margin: auto;
  }
- 
+
       .one {
          width:  33%;
          /* height: 200px; */
@@ -101,7 +108,7 @@ footer  {
         padding: auto;
         list-style: none;
      }
- 
+
      .two {
          width: 33%;
          /* height: 100px; */
@@ -109,7 +116,7 @@ footer  {
          background:white;
          text-align: center;
      }
- 
+
      .three {
          width: 33%;
          /* height: 100px; */
@@ -117,4 +124,4 @@ footer  {
          text-align: center;
          /* float: right; */
      }
- 
+
