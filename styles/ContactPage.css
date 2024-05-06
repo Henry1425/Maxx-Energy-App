@@ -6,13 +6,19 @@ html {
 body {font-family: Arial, Helvetica, sans-serif;}
 * {
   box-sizing: border-box;
-  /* background-image: url(../images/background-Image.jpg); */
-  /* background-repeat: no-repeat;
+   background-image: url(../images/background-Image.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover; */
+  background-size: cover;
   /* position:absolute; */
-  /* top:0; bottom:0; right:0; left:0; */
+  top:0; bottom:0; right:0; left:0;
+  color: aliceblue;
+
+}
+
+::placeholder {
+  color: hsl(177, 93%, 49%);
 }
 
 header {
@@ -20,6 +26,12 @@ header {
   height: 100px;
   background-color: rgba(200, 0, 0, 0.5); /*Temporary (helps determine size/location)*/
   text-align: center;
+
+}
+
+img {
+  width: 15%;
+  float: left;
 
 }
 
@@ -60,6 +72,10 @@ list-style:none;
 a {
   text-decoration: none;
   color:aqua
+}
+
+.background {
+  background-image: url(../images/background-Image.jpg);
 }
 
 .formarea {
