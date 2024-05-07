@@ -56,7 +56,7 @@ body {
 header {
     width: 100%;
     height: 20%;
-    background-color: rgba(200, 0, 0, 0.5); /*Temporary (helps determine size/location)*/
+    background-color: rgba(200, 0, 0, 0.5); /* Temporary (helps determine size/location) */
     text-align: center;
 }
 
@@ -92,13 +92,15 @@ footer  {
       width: 75%;
      height: 30%;
      margin: auto;
+     background-color: rgba(126, 143, 159, 0.514);
+    color: blueviolet;
  }
 
       .one {
          width:  33%;
          /* height: 200px; */
          /* margin-right: 15px; */
-         background: white;
+         /* background: white; */
          text-align: center;
      }
 
@@ -113,14 +115,14 @@ footer  {
          width: 33%;
          /* height: 100px; */
          /* margin-right: 15px; */
-         background:white;
+         /* background:white; */
          text-align: center;
      }
 
      .three {
          width: 33%;
          /* height: 100px; */
-         background:white;
+         /* background:white; */
          text-align: center;
          /* float: right; */
      }
