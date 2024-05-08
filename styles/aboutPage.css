@@ -79,7 +79,7 @@ top:0; bottom:0; right:0; left:0;
 }
 
 header {
-  width: 100%;
+  width: 90%;
   height: 100px;
   /* background-color: rgba(200, 0, 0, 0.5); Temporary (helps determine size/location)
   text-align: center; */
@@ -87,6 +87,7 @@ header {
 
 img {
   width: 15%;
+  height: 63%;
   float: left;
 
 }
