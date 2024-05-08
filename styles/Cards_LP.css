@@ -119,6 +119,7 @@
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0 0;
+    float: none;
 }
 
 .cardPlain_h {
@@ -172,12 +173,14 @@
     width: 100%;
     height: 45%;
     border-radius: 10px 10px 0 0;
+    
 }
 .card_Sample_A_i img {
     width: 50%;
     height: 75%;
     padding: 15px;
     border-radius: 10px 10px 0 0;
+    float: none;
 }
 
 .card_Sample_A_h {
@@ -187,6 +190,7 @@
 .card_Sample_A_h h1 {
     color: blue;
     font-size: 10px;
+    /* text-align: center; */
 }
 
 .card_Sample_A_p {
@@ -238,6 +242,7 @@
     width: 50%;
     height: 100%;
     border-radius: 0 0 10px 10px;
+    float: none;
 }
 
 .card_Sample_B_h {
@@ -298,6 +303,7 @@
     border-radius: 0px;
     width: 100%;
     height: 100%;
+    float: none;
 }
 
 .card_Sample_C_h {
@@ -377,6 +383,7 @@
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0 0;
+    float: none;
 }
 
 .card_Sample_D_h {
@@ -437,6 +444,7 @@
     border-radius: 0 0 0 0;
     width: 100%;
     height: 100%;
+    float: none;
 }
 
 .card_Sample_E_h {
