@@ -107,6 +107,7 @@
 .card_plain:hover {
     background-color: rgba(255, 240, 0, 1);
     border: 5px solid blue;
+    transition: 0.3s;
 }
 
 .cardPlain_i {
@@ -167,6 +168,7 @@
 .card_Sample_A:hover {
     background-color: rgba(200, 0, 0, 1);
     border: 5px solid blue;
+    transition: 0.3s;
 }
 
 .card_Sample_A_i {
@@ -190,7 +192,6 @@
 .card_Sample_A_h h1 {
     color: blue;
     font-size: 10px;
-    /* text-align: center; */
 }
 
 .card_Sample_A_p {
@@ -230,6 +231,7 @@
 .card_Sample_B:hover {
     background-color: rgba(0, 0, 200, 1);
     border: 7px solid red;
+    transition: 0.3s;
 }
 
 .card_Sample_B_i {
@@ -291,6 +293,7 @@
 .card_Sample_C:hover {
     background-color: rgba(255, 0, 255, 1);
     border: 5px solid purple;
+    transition: 0.3s;
 }
 
 .card_Sample_C_i {
@@ -371,6 +374,7 @@
 .card_Sample_D:hover {
     background-color: rgba(200, 200, 200, 1);
     border: 5px solid green;
+    transition: 0.3s;
 }
 
 .card_Sample_D_i {
@@ -432,6 +436,7 @@
 .card_Sample_E:hover {
     background-color: rgba(0, 255, 0, 1);
     border: 10px solid yellow;
+    transition: 0.3s;
 }
 
 .card_Sample_E_i {
