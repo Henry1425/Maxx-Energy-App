@@ -1,5 +1,3 @@
-//JavaScript
-
 //Lets functions know if cardModal is open or closed
 var cardAlreadyOpen = false;
 
