@@ -17,7 +17,7 @@ html {
   border-radius: 6px; */
 }
 
-section {
+.aboutMax {
   width: 50%;
   color: aliceblue;
   display: flex;
@@ -27,7 +27,7 @@ section {
   font-size:larger
 }
 
-p {
+.info {
   background-color: rgba(126, 143, 159, 0.88);
   border: 2px solid #0099CC;
   border-radius: 6px;
@@ -98,10 +98,11 @@ footer  {
   flex-direction: row;
   justify-content: center;
     width: 75%;
-   height: 30%;
+   height: 25%;
    margin: auto;
    background-color: rgba(126, 143, 159, 0.514);
   color:  white;
+  margin-top: 20%;
 }
 
     .one {
@@ -134,3 +135,4 @@ footer  {
        text-align: center;
        /* float: right; */
    }
+

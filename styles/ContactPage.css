@@ -123,7 +123,7 @@ input[type=submit]:hover {
   border-radius: 5px;
   padding: 20px;
 }
-  
+
 footer  {
   display: flex;
   flex-direction: row;
@@ -165,5 +165,5 @@ footer  {
        text-align: center;
        /* float: right; */
    }
-}
 
+   /* Responsive styles */

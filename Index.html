@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="./styles/Styles.css" />
 
     <link rel="stylesheet" type="text/css" href="./styles/Cards_LP.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
 
     <link rel="stylesheet" type="text/css" href="./styles/Accessibility_ColorModes.css" />
 
@@ -18,8 +20,8 @@
 
   <body>
     <header>
-      <img src="images/MPG-Image.jpg" />
-      <div class="navbar">
+      <img src="images/MPG-Image.jpg" alt="MPG Company Logo" />
+      <nav aria-label="Main navigation" class="navbar">
         <ul>
           <li>
             <button class="btn"><a href="index.html">Home</a></button>
@@ -36,21 +38,23 @@
             </button>
           </li>
         </ul>
-      </div>
+      </nav>
+
       <button id="tcbID" class="toggleColorBtn" onclick="toggleColorMode()">Default</button>
     </header>
 
     <div class="cardModal" id="cardModal_ID">
-      <div style="background-color: rgba(255, 255, 255, .75);">
+      <div style="background-color: rgba(255, 255, 255, 0.75)">
         <br />
         <header id="cardModal_Stuff_A">Something didn't work</header>
       </div>
-      <div style="background-color: rgba(255, 255, 255, 1);">
+      <div style="background-color: rgba(255, 255, 255, 1)">
         <p id="cardModal_Stuff_B">Probally something wrong on JavaScript end</p>
       </div>
-      <div style="background-color: rgba(255, 255, 255, 1);">
+      <div style="background-color: rgba(255, 255, 255, 1)">
         <br />
-        <div class="modalFooter" style="border: 0px inset black; height: 200%;">
+
+        <div class="modalFooter" style="border: 0px inset black; height: 200%">
           <a id="cardModal_Stuff_C" href="">What happened?</a>
         </div>
       </div>
@@ -76,7 +80,8 @@
               <button
                 id="cp_csBtnA_ID"
                 value="Sample Title/-/<i>All links in these card pop up windows link back to the landing page</i>/-/www.(804).f@ke_L!nk/-/Index.html"
-                onclick="open_cardModal(this.value)">
+                onclick="open_cardModal(this.value)"
+              >
                 Open A
               </button>
             </div>
@@ -96,7 +101,8 @@
               <button
                 id="cp_csBtnB_ID"
                 value="Another Title/-/These cards are just sample templates/-/another/www.f@ke_L!nk-123\abc/-/Index.html"
-                onclick="open_cardModal(this.value)">
+                onclick="open_cardModal(this.value)"
+              >
                 Open B
               </button>
             </div>
@@ -120,7 +126,8 @@
               <button
                 id="cp_csBtnC_ID"
                 value="<div class='Modal_Sample_C_A'><b>Example</b></div>/-/<div class='Modal_Sample_C_B'><i>Pop ups can have their styles edited too</i></div>/-/<div class='Modal_Sample_C_C'>s.a/m(p:l,e</div>/-/Index.html"
-                onclick="open_cardModal(this.value)">
+                onclick="open_cardModal(this.value)"
+              >
                 Open C
               </button>
             </div>
@@ -179,7 +186,8 @@
               <button
                 id="cp_csBtn_ID"
                 value="Testing/-/abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc/-/Another.Link.That.Leads.Back.To.This.Page/-/Index.html"
-                onclick="open_cardModal(this.value)">
+                onclick="open_cardModal(this.value)"
+              >
                 Button
               </button>
             </div>
