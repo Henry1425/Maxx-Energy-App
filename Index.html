@@ -6,14 +6,16 @@
     <link rel="stylesheet" type="text/css" href="./styles/Styles.css" />
 
     <link rel="stylesheet" type="text/css" href="./styles/Cards_LP.css" />
+    <link rel="stylesheet" href="./normal" />
+    <link rel="stylesheet" href="css/skeleton.css" />
 
     <script type="text/javascript" src="./js/Script.js"></script>
   </head>
 
   <body>
     <header>
-      <img src="images/MPG-Image.jpg" />
-      <div class="navbar">
+      <img src="images/MPG-Image.jpg" alt="MPG Company Logo" />
+      <nav aria-label="Main navigation" class="navbar">
         <ul>
           <li>
             <button class="btn"><a href="index.html">Home</a></button>
@@ -30,20 +32,20 @@
             </button>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <div class="cardModal" id="cardModal_ID">
-      <div style="background-color: rgba(255, 255, 255, .75);">
+      <div style="background-color: rgba(255, 255, 255, 0.75)">
         <br />
         <header id="cardModal_Stuff_A">Something didn't work</header>
       </div>
-      <div style="background-color: rgba(255, 255, 255, 1);">
+      <div style="background-color: rgba(255, 255, 255, 1)">
         <p id="cardModal_Stuff_B">Probally something wrong on JavaScript end</p>
       </div>
-      <div style="background-color: rgba(255, 255, 255, 1);">
+      <div style="background-color: rgba(255, 255, 255, 1)">
         <br />
-        <div class="modalFooter" style="border: 0px inset black; height: 100%;">
+        <div class="modalFooter" style="border: 0px inset black; height: 100%">
           <a id="cardModal_Stuff_C" href="">What happened?</a>
         </div>
       </div>
@@ -52,7 +54,6 @@
     <div class="CenterPage">
       <div class="card_Row">
         <div class="card_Column">
-    
           <div class="card_Sample_A">
             <div class="card_Sample_A_i">
               <img src="./images/SampleImage_A.jpg" />
@@ -61,18 +62,22 @@
               <h1>Company Title</h1>
             </div>
             <div class="card_Sample_A_p">
-              <p>A general description of the company or somthing relating to it. Anything at all at this point.
-                This is just sample text for testing purposes.</p>
+              <p>
+                A general description of the company or somthing relating to it.
+                Anything at all at this point. This is just sample text for
+                testing purposes.
+              </p>
             </div>
             <div class="card_Sample_A_b">
               <button
                 value="Sample Title/-/<i>All links in these card pop up windows link back to the landing page</i>/-/www.(804).f@ke_L!nk/-/Index.html"
-                onclick="open_cardModal(this.value)">
+                onclick="open_cardModal(this.value)"
+              >
                 Open A
               </button>
             </div>
           </div>
-    
+
           <div class="card_Sample_B">
             <div class="card_Sample_B_i">
               <img src="./images/SampleImage_C.jpg" />
@@ -86,12 +91,13 @@
             <div class="card_Sample_B_b">
               <button
                 value="Another Title/-/These cards are just sample templates/-/another/www.f@ke_L!nk-123\abc/-/Index.html"
-                onclick="open_cardModal(this.value)">
+                onclick="open_cardModal(this.value)"
+              >
                 Open B
               </button>
             </div>
           </div>
-    
+
           <div class="card_Sample_C">
             <div class="card_Sample_C_i">
               <img src="./images/SampleImage_B.jpg" />
@@ -105,15 +111,15 @@
             <div class="card_Sample_C_b">
               <button
                 value="<div class='Modal_Sample_C_A'><b>Example</b></div>/-/<div class='Modal_Sample_C_B'><i>Pop ups can have their styles edited too</i></div>/-/<div class='Modal_Sample_C_C'>s.a/m(p:l,e</div>/-/Index.html"
-                onclick="open_cardModal(this.value)">
+                onclick="open_cardModal(this.value)"
+              >
                 Open C
               </button>
             </div>
           </div>
         </div>
-    
+
         <div class="card_Column">
-    
           <div class="card_Sample_D">
             <div class="card_Sample_D_i">
               <img src="./images/BlankSampleImage.jpg" />
@@ -122,17 +128,21 @@
               <h1>Header</h1>
             </div>
             <div class="card_Sample_D_p">
-              <p>More info: 1 2 3 4 5 6 7 8 9 10 11 12 13 14
-                15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40</p>
+              <p>
+                More info: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+                22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+              </p>
             </div>
             <div class="card_Sample_D_b">
-              <button value="Card/Modal/-/<b>Slide animation was made using webkit</b>/-/Link/-/Index.html"
-                onclick="open_cardModal(this.value)">
+              <button
+                value="Card/Modal/-/<b>Slide animation was made using webkit</b>/-/Link/-/Index.html"
+                onclick="open_cardModal(this.value)"
+              >
                 Learn More
               </button>
             </div>
           </div>
-    
+
           <div class="card_Sample_E">
             <div class="card_Sample_E_i">
               <img src="./images/SampleImage_D.jpg" />
@@ -143,13 +153,11 @@
             <div class="card_Sample_E_p">
               <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
             </div>
-            <div class="card_Sample_E_b">
-            </div>
+            <div class="card_Sample_E_b"></div>
           </div>
         </div>
-    
+
         <div class="card_Column">
-    
           <div class="card_plain">
             <div class="cardPlain_i">
               <img src="./images/SampleImage_E.jpg" />
@@ -163,7 +171,8 @@
             <div class="cardPlain_b">
               <button
                 value="Testing/-/abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc/-/Another.Link.That.Leads.Back.To.This.Page/-/Index.html"
-                onclick="open_cardModal(this.value)">
+                onclick="open_cardModal(this.value)"
+              >
                 Button
               </button>
             </div>
