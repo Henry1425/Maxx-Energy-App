@@ -26,7 +26,12 @@
     <link rel="stylesheet" href="./styles/skeleton.css" />
     <link rel="stylesheet" href="./styles/DataPage.css" />
     <link rel="stylesheet" href="./styles/DataPage_Graphs.css" />
+    <link rel="stylesheet" href="./styles/Accessibility_ColorModes.css" />
 
+    <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="./js/Accessibility_ColorModes.js"></script> />
+  
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -81,8 +86,9 @@
     </header>
 
     <!-- Chris is doing Graph Area Here -->
-    <div class="Graphs_Body">
-      <div class="Graphs_Data">
+    <button id="tcbID" class="toggleColorBtn" value="DP" onclick="toggleColorMode(this.value)">Default</button>
+    <div class="Graphs_Body" id="Graphs_Body_ID">
+      <div class="Graphs_Data" id="Graphs_Data_ID">
         <div class="Graphs_Col">
           <div class="Graphs_AA" id="Graphs_AA_ID">
             Title
