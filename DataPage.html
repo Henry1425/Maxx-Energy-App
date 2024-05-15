@@ -25,7 +25,13 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/skeleton.css" />
     <link rel="stylesheet" href="./styles/DataPage.css" />
+    <link rel="stylesheet" href="./styles/DataPage_Graphs.css" />
+    <link rel="stylesheet" href="./styles/Accessibility_ColorModes.css" />
 
+    <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="./js/Accessibility_ColorModes.js"></script> />
+  
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -35,7 +41,46 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <header>
       <!-- Noman doing main NavBar Home,Contact,About & Login Here   -->
-      <nav></nav>
+        <img src="images/MPG-Image.jpg" alt="MPG Company Logo" />
+        <nav aria-label="Main navigation" class="navbar">
+        </nav>
+        <head>
+          <style>
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover {
+            background-color: #111;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <ul>
+            <li><a class="active" href="Index.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="AboutPage.html">About</a></li>
+            <li><a href="Login.html">Login</a></li>
+          </ul>
+          </body>
+    </header>
       <!-- Henry doing Data NavBar Here - DC Power, AC Power, Daily Yield, Total Yield -->
 
       <nav aria-label="Data navigation" class="container">
@@ -57,8 +102,26 @@
     </header>
 
     <!-- Chris is doing Graph Area Here -->
-    <div>
-      <!-- Graph Area -->
+    <button id="tcbID" class="toggleColorBtn" value="DP" onclick="toggleColorMode(this.value)">Default</button>
+    <div class="Graphs_Body" id="Graphs_Body_ID">
+      <div class="Graphs_Data" id="Graphs_Data_ID">
+        <div class="Graphs_Col">
+          <div class="Graphs_AA" id="Graphs_AA_ID">
+            Title
+          </div>
+          <div class="Graphs_AB" id="Graphs_AB_ID">
+            <img src="images/SampleImage_Graph_A.jpg" id="Graphs_AB_Img_ID"/>
+          </div>
+        </div>
+        <div class="Graphs_Col">
+          <div class="Graphs_BA" id="Graphs_BA_ID">
+            Description
+          </div>
+          <div class="Graphs_BB" id="Graphs_BB_ID">
+            Graph B?
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- John is doing the Website footer Here -->
