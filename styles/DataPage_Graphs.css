@@ -1,0 +1,56 @@
+.Graphs_Body {
+    /* width: 50%;
+    height: 50%; */
+    width: 750px;
+    height: 250px;
+    background-color: rgb(255, 225, 0, 0.5);
+    margin: auto;
+}
+.Graphs_Data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    height: 95%;
+    background-color: rgba(255, 0, 0, 0.5);
+    margin: auto;
+}
+.Graphs_Col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    height: 95%;
+}
+.Graphs_AA {
+    width: 95%;
+    height: 15%;
+    background-color: rgba(0, 0, 255, 0.5);
+    margin: auto;
+    border: 1px inset black;
+}
+.Graphs_AB {
+    width: 95%;
+    height: 75%;
+    background-color: rgba(0, 255, 0, 0.5);
+    margin: auto;
+    border: 1px inset black;
+}
+.Graphs_AB img {
+    width: 100%;
+    height: 100%;
+}
+.Graphs_BA {
+    width: 95%;
+    height: 45%;
+    background-color: rgba(0, 255, 255, 0.5);
+    margin: auto;
+    border: 1px inset black;
+}
+.Graphs_BB {
+    width: 95%;
+    height: 45%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    border: 1px inset black;
+}

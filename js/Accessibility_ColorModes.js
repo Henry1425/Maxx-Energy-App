@@ -1,6 +1,5 @@
-//Default coloring
-var d_bgi = "url(../images/background-Image.jpg)";        //Background image
-var changedElements = [
+//Default coloring for Landing Page
+var LP_changedElements = [
     "tcbID",
 
     // "cardModal_ID",
@@ -19,7 +18,7 @@ var changedElements = [
     "cp_csE_ID", "cp_cshE_ID", "cp_cspE_ID"
 ];
 
-var changedElements_borders = [
+var LP_changedElements_borders = [
     "tcbID",
 
     "cp_cs_ID", "cp_csBtn_ID",
@@ -30,34 +29,64 @@ var changedElements_borders = [
     "cp_csE_ID"
 ];
 
-var defaultColors_f = [];
-var defaultColors_bgc = [];
-var defaultColors_b = [];
+var LP_defaultColors_f = [];
+var LP_defaultColors_bgc = [];
+var LP_defaultColors_b = [];
+
+//Default coloring for Data Page
+var DP_changedElements = [
+    "tcbID",
+    "Graphs_Body_ID",
+    "Graphs_Data_ID",
+    "Graphs_AA_ID",
+    "Graphs_AB_ID",
+    "Graphs_BA_ID",
+    "Graphs_BB_ID"
+];
+
+var DP_changedElements_borders = [
+    "tcbID",
+    "Graphs_Body_ID",
+    "Graphs_Data_ID",
+    "Graphs_AA_ID",
+    "Graphs_AB_ID",
+    "Graphs_BA_ID",
+    "Graphs_BB_ID"
+];
+
+var DP_defaultColors_f = [];
+var DP_defaultColors_bgc = [];
+var DP_defaultColors_b = [];
 
 //Light mode
-// var LM_bgi = "url(../images/???.jpg)";
 var LM_text = "#4f4f4f";
 var LM_bgc = "#ffffff";
 
 //Dark mode
-// var DM_bgi = "url(../images/???.jpg)";
 var DM_text = "#ffffff";
 var DM_bgc = "#13294B";
 
-//Contrast mode(s)?
-
-
 //Color Swaping
 var currentColorMode = "Default";
-var defaultColorsSaved = false;
+var currentPage = "";
+var LP_defaultColorsSaved = false;
+var DP_defaultColorsSaved = false;
 
-function toggleColorMode() {
+//Sets the color mode to the next
+function toggleColorMode(thePage) {
 
-    if (!defaultColorsSaved) {
+    //Makes sure current page has default colors recorded
+    currentPage = thePage;
+    if (!LP_defaultColorsSaved && currentPage == "LP") {
         getDefaultColors();
-        defaultColorsSaved = true;
+        LP_defaultColorsSaved = true;
+    }
+    else if (!DP_defaultColorsSaved && currentPage == "DP") {
+        getDefaultColors();
+        DP_defaultColorsSaved = true;
     }
 
+    //Applies new mode colors
     if (currentColorMode == "Default") {
         document.getElementById("tcbID").innerHTML = "Light Mode";
         currentColorMode = "LightMode";
@@ -73,22 +102,33 @@ function toggleColorMode() {
         currentColorMode = "Default";
         changeModes("D");
     }
-    else {
-
-    }
 }
 
+//Applies color changes
 function changeModes(Mode) {
+    //Returns colors back to default
     if (Mode == "D") {
-        for (let i = 0; i < changedElements.length; i++) {
-            document.getElementById(changedElements[i]).style.color = defaultColors_f[i];
-            document.getElementById(changedElements[i]).style.background = defaultColors_bgc[i];
+        if (currentPage == "LP") {
+            for (let i = 0; i < LP_changedElements.length; i++) {
+                document.getElementById(LP_changedElements[i]).style.color = LP_defaultColors_f[i];
+                document.getElementById(LP_changedElements[i]).style.background = LP_defaultColors_bgc[i];
+            }
+            for (let i = 0; i < LP_changedElements_borders.length; i++) {
+                document.getElementById(LP_changedElements_borders[i]).style.border = LP_defaultColors_b[i];
+            }
         }
-        for (let i = 0; i < changedElements_borders.length; i++) {
-            document.getElementById(changedElements_borders[i]).style.border = defaultColors_b[i];
+        else if (currentPage == "DP") {
+            for (let i = 0; i < DP_changedElements.length; i++) {
+                document.getElementById(DP_changedElements[i]).style.color = DP_defaultColors_f[i];
+                document.getElementById(DP_changedElements[i]).style.background = DP_defaultColors_bgc[i];
+            }
+            for (let i = 0; i < DP_changedElements_borders.length; i++) {
+                document.getElementById(DP_changedElements_borders[i]).style.border = DP_defaultColors_b[i];
+            }
         }
     }
     else {
+        //Applies new colors matching the current mode
         let ColorA = "";
         let ColorB = "";
         if (Mode == "LM") {
@@ -99,121 +139,45 @@ function changeModes(Mode) {
             ColorA = DM_text;
             ColorB = DM_bgc;
         }
-        for (let i = 0; i < changedElements.length; i++) {
-            document.getElementById(changedElements[i]).style.color = ColorA;
-            document.getElementById(changedElements[i]).style.background = ColorB;
+        if (currentPage == "LP") {
+            for (let i = 0; i < LP_changedElements.length; i++) {
+                document.getElementById(LP_changedElements[i]).style.color = ColorA;
+                document.getElementById(LP_changedElements[i]).style.background = ColorB;
+            }
+            for (let i = 0; i < LP_changedElements.length; i++) {
+                document.getElementById(LP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
+            }
         }
-        for (let i = 0; i < changedElements.length; i++) {
-            document.getElementById(changedElements_borders[i]).style.border = "1px solid " + ColorA;
+        else if (currentPage == "DP") {
+            for (let i = 0; i < DP_changedElements.length; i++) {
+                document.getElementById(DP_changedElements[i]).style.color = ColorA;
+                document.getElementById(DP_changedElements[i]).style.background = ColorB;
+            }
+            for (let i = 0; i < DP_changedElements.length; i++) {
+                document.getElementById(DP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
+            }
         }
     }
 }
 
+//Gets the default colors for the current page
 function getDefaultColors() {
-    //Font/background
-    for (let i = 0; i < changedElements.length; i++) {
-        defaultColors_f.push(document.getElementById(changedElements[i]).style.color);
-        defaultColors_bgc.push(document.getElementById(changedElements[i]).style.background);
+    if (currentPage == "LP") {
+        for (let i = 0; i < LP_changedElements.length; i++) {
+            LP_defaultColors_f.push(document.getElementById(LP_changedElements[i]).style.color);
+            LP_defaultColors_bgc.push(document.getElementById(LP_changedElements[i]).style.background);
+        }
+        for (let i = 0; i < LP_changedElements_borders.length; i++) {
+            LP_defaultColors_b.push(document.getElementById(LP_changedElements_borders[i]).style.border);
+        }
     }
-    //border
-    for (let i = 0; i < changedElements_borders.length; i++) {
-        defaultColors_b.push(document.getElementById(changedElements_borders[i]).style.border);
+    else if (currentPage == "DP") {
+        for (let i = 0; i < DP_changedElements.length; i++) {
+            DP_defaultColors_f.push(document.getElementById(DP_changedElements[i]).style.color);
+            DP_defaultColors_bgc.push(document.getElementById(DP_changedElements[i]).style.background);
+        }
+        for (let i = 0; i < DP_changedElements_borders.length; i++) {
+            DP_defaultColors_b.push(document.getElementById(DP_changedElements_borders[i]).style.border);
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Attempt with find by class instead of id
-/*
-var theElementsClassList = [];
-function changeModes(Mode) {
-    if (Mode == "D") {
-
-        for (let x = 0; x < theElementsClassList.length; x++) {
-            for (let y = 0; y < theElementsClassList[x].length; y++) {
-                theElementsClassList[x][y].style.color = defaultColors_f[x][y];
-                theElementsClassList[x][y].style.background = defaultColors_bgc[x][y];
-            }
-        }
-
-    }
-    else if (Mode == "LM") {
-
-        for (let x = 0; x < theElementsClassList.length; x++) {
-            for (let y = 0; y < theElementsClassList[x].length; y++) {
-                theElementsClassList[x][y].style.color = LM_text;
-                theElementsClassList[x][y].style.background = LM_bgc;
-            }
-        }
-        
-    }
-    else if (Mode == "DM") {
-        
-        for (let x = 0; x < theElementsClassList.length; x++) {
-            for (let y = 0; y < theElementsClassList[x].length; y++) {
-                theElementsClassList[x][y].style.color = DM_text;
-                theElementsClassList[x][y].style.background = DM_bgc;
-            }
-        }
-
-    }
-}
-
-function getDefaultColors() {
-
-    //Fills theElementsClassList with arrays of classes
-    for (let i = 0; i < changedElements.length; i++) {
-        theElementsClassList.push(document.getElementsByClassName(changedElements[i]));
-    }
-
-    //document.getElementById("tcbID").value = theElementsClassList[1][0].innerHTML;
-
-    //goes through theElementsClassList outter array
-    for (let i = 0; i < theElementsClassList.length; i++) {
-
-        let cArray = [];
-        let bgArray =  [];
-
-        //goes through theElementsClassList inner arrays and pushes them to temp arrays
-        for (let j = 0; j < theElementsClassList[i].length; j++) {
-            let tempArray = theElementsClassList[i];
-            cArray.push(tempArray[j].style.color);
-            bgArray.push(tempArray[j].style.background);
-        }
-        //pushes temp arrays t default color arrays
-        defaultColors_f[i].push(cArray);
-        defaultColors_bgc[i].push(bgArray);
-    }
-
-}
-*/
