@@ -1,0 +1,28 @@
+{
+  "name": "maxx-energy-app",
+  "version": "1.0.0",
+  "description": "Max Energy Webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henry1425/Maxx-Energy-App.git"
+  },
+  "keywords": [
+    "Henry Acosta",
+    "Chris Staunton",
+    "John Allen",
+    "Noman Raghib"
+  ],
+  "author": "Henry Acosta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henry1425/Maxx-Energy-App/issues"
+  },
+  "homepage": "https://github.com/Henry1425/Maxx-Energy-App#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
