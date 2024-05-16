@@ -2,6 +2,12 @@
 var LP_changedElements = [
     "tcbID",
 
+    "navBar_ID",
+    "navBar_href_Index_ID",
+    "navBar_href_Contact_ID",
+    "navBar_href_About_ID",
+    "navBar_href_Login_ID",
+
     // "cardModal_ID",
     // "cardModal_Stuff_A",
     // "cardModal_Stuff_B",
@@ -15,11 +21,22 @@ var LP_changedElements = [
     "cp_csC_ID", "cp_cshC_ID", "cp_cspC_ID",  "cp_csCb_ID", "cp_csBtnC_ID",
     "cp_csD_ID", "cp_cshD_ID", "cp_cspD_ID",  "cp_csDb_ID", "cp_csBtnD_ID",
 
-    "cp_csE_ID", "cp_cshE_ID", "cp_cspE_ID"
+    "cp_csE_ID", "cp_cshE_ID", "cp_cspE_ID",
+
+    "footer_ID",
+    "footer_C_A_ID", "footer_C_B_ID",
+    "footer_P_A_ID",
+    "footer_F_A_ID", "footer_F_B_ID", "footer_F_C_ID"
+
 ];
 
 var LP_changedElements_borders = [
     "tcbID",
+
+    "navBar_Btn_Index_ID",
+    "navBar_Btn_Contact_ID",
+    "navBar_Btn_About_ID",
+    "navBar_Btn_Login_ID",
 
     "cp_cs_ID", "cp_csBtn_ID",
     "cp_csA_ID", "cp_csBtnA_ID",
@@ -32,6 +49,50 @@ var LP_changedElements_borders = [
 var LP_defaultColors_f = [];
 var LP_defaultColors_bgc = [];
 var LP_defaultColors_b = [];
+
+//Default coloring for Contact Page
+var CP_changedElements = [
+    "tcbID",
+
+    "navBar_ID",
+    "navBar_href_Index_ID",
+    "navBar_href_Contact_ID",
+    "navBar_href_About_ID",
+    "navBar_href_Login_ID",
+
+    "CF_ID",
+    "formarea_ID",
+    "fname", "label_FN_ID",
+    "lname", "label_LN_ID",
+    "country", "label_C_ID",
+    "subject", "label_S_ID",
+
+
+    "fa_Submit_ID",
+
+    "footer_ID",
+    "footer_C_ID", "footer_C_A_ID", "footer_C_B_ID",
+    "footer_OA_ID", "footer_OB_ID",
+    "footer_P_ID", "footer_P_A_ID",
+    "footer_F_ID", "footer_F_A_ID", "footer_F_B_ID", "footer_F_C_ID"
+
+];
+
+var CP_changedElements_borders = [
+    "tcbID",
+
+    "fa_Submit_ID",
+
+    "navBar_Btn_Index_ID",
+    "navBar_Btn_Contact_ID",
+    "navBar_Btn_About_ID",
+    "navBar_Btn_Login_ID"
+    
+];
+
+var CP_defaultColors_f = [];
+var CP_defaultColors_bgc = [];
+var CP_defaultColors_b = [];
 
 //Default coloring for Data Page
 var DP_changedElements = [
@@ -71,6 +132,7 @@ var currentColorMode = "Default";
 var currentPage = "";
 var LP_defaultColorsSaved = false;
 var DP_defaultColorsSaved = false;
+var CP_defaultColorsSaved = false;
 
 //Sets the color mode to the next
 function toggleColorMode(thePage) {
@@ -84,6 +146,10 @@ function toggleColorMode(thePage) {
     else if (!DP_defaultColorsSaved && currentPage == "DP") {
         getDefaultColors();
         DP_defaultColorsSaved = true;
+    }
+    else if (!CP_defaultColorsSaved && currentPage == "CP") {
+        getDefaultColors();
+        CP_defaultColorsSaved = true;
     }
 
     //Applies new mode colors
@@ -126,6 +192,15 @@ function changeModes(Mode) {
                 document.getElementById(DP_changedElements_borders[i]).style.border = DP_defaultColors_b[i];
             }
         }
+        else if (currentPage == "CP") {
+            for (let i = 0; i < CP_changedElements.length; i++) {
+                document.getElementById(CP_changedElements[i]).style.color = CP_defaultColors_f[i];
+                document.getElementById(CP_changedElements[i]).style.background = CP_defaultColors_bgc[i];
+            }
+            for (let i = 0; i < CP_changedElements_borders.length; i++) {
+                document.getElementById(CP_changedElements_borders[i]).style.border = CP_defaultColors_b[i];
+            }
+        }
     }
     else {
         //Applies new colors matching the current mode
@@ -157,6 +232,15 @@ function changeModes(Mode) {
                 document.getElementById(DP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
         }
+        else if (currentPage == "CP") {
+            for (let i = 0; i < CP_changedElements.length; i++) {
+                document.getElementById(CP_changedElements[i]).style.color = ColorA;
+                document.getElementById(CP_changedElements[i]).style.background = ColorB;
+            }
+            for (let i = 0; i < CP_changedElements.length; i++) {
+                document.getElementById(CP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
+            }
+        }
     }
 }
 
@@ -178,6 +262,15 @@ function getDefaultColors() {
         }
         for (let i = 0; i < DP_changedElements_borders.length; i++) {
             DP_defaultColors_b.push(document.getElementById(DP_changedElements_borders[i]).style.border);
+        }
+    }
+    else if (currentPage == "CP") {
+        for (let i = 0; i < CP_changedElements.length; i++) {
+            CP_defaultColors_f.push(document.getElementById(CP_changedElements[i]).style.color);
+            CP_defaultColors_bgc.push(document.getElementById(CP_changedElements[i]).style.background);
+        }
+        for (let i = 0; i < CP_changedElements_borders.length; i++) {
+            CP_defaultColors_b.push(document.getElementById(CP_changedElements_borders[i]).style.border);
         }
     }
 }
