@@ -58,6 +58,7 @@ var CP_changedElements = [
 
     "navBar_ID",
     "navBar_href_Index_ID",
+    "navBar_href_Data_ID",
     "navBar_href_Contact_ID",
     "navBar_href_About_ID",
     "navBar_href_Login_ID",
@@ -86,6 +87,7 @@ var CP_changedElements_borders = [
     "fa_Submit_ID",
 
     "navBar_Btn_Index_ID",
+    "navBar_Btn_Data_ID",
     "navBar_Btn_Contact_ID",
     "navBar_Btn_About_ID",
     "navBar_Btn_Login_ID"
@@ -102,6 +104,7 @@ var AP_changedElements = [
 
     "navBar_ID",
     "navBar_href_Index_ID",
+    "navBar_href_Data_ID",
     "navBar_href_Contact_ID",
     "navBar_href_About_ID",
     "navBar_href_Login_ID",
@@ -120,6 +123,7 @@ var AP_changedElements_borders = [
     "tcbID",
 
     "navBar_Btn_Index_ID",
+    "navBar_Btn_Data_ID",
     "navBar_Btn_Contact_ID",
     "navBar_Btn_About_ID",
     "navBar_Btn_Login_ID"
