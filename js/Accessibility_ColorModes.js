@@ -137,6 +137,19 @@ var AP_defaultColors_b = [];
 //Default coloring for Data Page
 var DP_changedElements = [
     "tcbID",
+
+    "navBar_ID",
+    "navBar_href_Index_ID",
+    "navBar_href_Contact_ID",
+    "navBar_href_About_ID",
+    "navBar_href_Login_ID",
+
+    "DataNav_ID",
+    "DN_DC_ID",
+    "DN_AC_ID",
+    "DN_DY_ID",
+    "DN_TY_ID",
+
     "Graphs_Body_ID",
     "Graphs_Data_ID",
     "Graphs_AA_ID",
@@ -153,6 +166,12 @@ var DP_changedElements = [
 
 var DP_changedElements_borders = [
     "tcbID",
+
+    "DN_DC_ID",
+    "DN_AC_ID",
+    "DN_DY_ID",
+    "DN_TY_ID",
+
     "Graphs_Body_ID",
     "Graphs_Data_ID",
     "Graphs_AA_ID",
