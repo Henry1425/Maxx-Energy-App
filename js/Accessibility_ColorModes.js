@@ -142,7 +142,13 @@ var DP_changedElements = [
     "Graphs_AA_ID",
     "Graphs_AB_ID",
     "Graphs_BA_ID",
-    "Graphs_BB_ID"
+    "Graphs_BB_ID",
+
+    "footer_ID",
+    "footer_C_ID", "footer_C_A_ID", "footer_C_B_ID",
+    "footer_OA_ID", "footer_OB_ID",
+    "footer_P_ID", "footer_P_A_ID",
+    "footer_F_ID", "footer_F_A_ID", "footer_F_B_ID", "footer_F_C_ID"
 ];
 
 var DP_changedElements_borders = [
