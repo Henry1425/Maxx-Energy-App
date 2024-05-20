@@ -1,6 +1,12 @@
 /* Put your CSS Here */
 
+header {
 
+justify-content: center;
+text-align: center;
+margin: auto;
+
+}
  ul {
   display: flex;
   flex-direction: row;
