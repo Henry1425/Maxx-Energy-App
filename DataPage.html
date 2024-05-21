@@ -31,22 +31,24 @@
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script type="text/javascript" src="./js/Accessibility_ColorModes.js"></script> />
+
     <script type="text/javascript" src="./js/DataPage.js"></script> />
-  
+
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
-  <body>
+<body>
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
     <header>
       <!-- Noman doing main NavBar Home,Contact,About & Login Here   -->
-      <img src="images/MPG-Image.jpg" alt="MPG Company Logo" style="width: 37%">
+      <img src="images/MPG-Image.jpg" alt="MPG Company Logo" style="width: 35%">
         <nav aria-label="Main navigation" class="navbar">
         </nav>
         <head>
-          <style>
+          <!-- <style>
           ul {
             list-style-type: none;
             margin: 0;
@@ -70,10 +72,10 @@
           li a:hover {
             background-color: #111;
           }
-          </style>
+          </style> -->
           </head>
           <body>
-          
+
           <ul id="navBar_ID">
             <li><a id="navBar_href_Index_ID" class="active" href="Index.html">Home</a></li>
             <li><a id="navBar_href_Contact_ID" href="Contact.html">Contact</a></li>
@@ -93,10 +95,10 @@
             <button class="button button-primary" onclick="changeData_ACP()" id="DN_AC_ID">AC Power</button>
           </li>
           <li>
-            <button class="btn" onclick="changeData_DY()" id="DN_DY_ID">Daily Yield</button>
+            <button class="button button-primary" onclick="changeData_DY()" id="DN_DY_ID">Daily Yield</button>
           </li>
           <li>
-            <button class="btn" onclick="changeData_TY()" id="DN_TY_ID">Total Yield</button>
+            <button class="button button-primary" onclick="changeData_TY()" id="DN_TY_ID">Total Yield</button>
           </li>
         </ul>
       </nav>

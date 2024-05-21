@@ -5,10 +5,10 @@ header {
 justify-content: center;
 text-align: center;
 margin: auto;
-width: 75%;
-height: 75%;
-margin: auto;
-background-color: rgba(126, 143, 159, 0.514);
+  width: 75%;
+ height: 50%;
+ margin: auto;
+ background-color: rgba(126, 143, 159, 0.514);
 color:  white;
 
 }

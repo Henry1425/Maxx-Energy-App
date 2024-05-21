@@ -1,8 +1,8 @@
 //ID's of sections to change with data
-const TitleID = "Graphs_AA_ID";
-const GraphID = "Graphs_AB_Img_ID";
-const DescID = "Graphs_BA_ID";
-const ExtraID = "Graphs_BB_ID";
+const TitleID = "Graphs_AA_ID";     //div
+const GraphID = "Graphs_AB_Img_ID"; //img
+const DescID = "Graphs_BA_ID";      //div
+const ExtraID = "Graphs_BB_ID";     //div
 
 
 function changeData_DCP() {
