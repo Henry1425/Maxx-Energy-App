@@ -2,7 +2,7 @@
 header {
     justify-content: center;
     width: 75%;
-    height: 30%;
+    height: 25%;
     text-align: center;
     margin: auto;
     background-color: rgba(126, 143, 159, 0.514);
@@ -58,7 +58,7 @@ footer  {
     flex-direction: row;
     justify-content: center;
       width: 75%;
-     height: 30%;
+     height: 40%;
      margin: auto;
      background-color: rgba(126, 143, 159, 0.514);
     color:  white;
