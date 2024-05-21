@@ -4,41 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./styles/ContactPage.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/Accessibility_ColorModes.css" />
+    <script type="text/javascript" src="./js/Accessibility_ColorModes.js"></script> />
     <title>Contact Page</title>
   </head>
   <body>
+    <button id="tcbID" class="toggleColorBtn" value="CP" onclick="toggleColorMode(this.value)">Default</button>
     <div class="containerNav">
       <header>
         <a href="index.html"
           ><img src="images/MPG-Image.jpg" alt="MPG Company Logo"
         /></a>
 
-        <nav aria-label="Main navigation" class="navbar">
+        <nav aria-label="Main navigation" class="navbar" id="navBar_ID">
           <ul>
             <li>
-              <button class="btn"><a href="index.html">Home</a></button>
+              <button class="btn" id="navBar_Btn_Index_ID"><a id="navBar_href_Index_ID" href="index.html">Home</a></button>
             </li>
             <li>
-              <button class="btn"><a href="Contact.html">Contact</a></button>
+              <button class="btn" id="navBar_Btn_Data_ID"><a id="navBar_href_Data_ID" href="DataPage.html">Data</a></button>
             </li>
             <li>
-              <button class="btn"><a href="AboutPage.html">About</a></button>
+              <button class="btn" id="navBar_Btn_Contact_ID"><a id="navBar_href_Contact_ID" href="Contact.html">Contact</a></button>
             </li>
             <li>
-              <button class="btn">
-                <a href="Login.html">Login</a>
-              </button>
+              <button class="btn" id="navBar_Btn_About_ID"><a id="navBar_href_About_ID" href="AboutPage.html">About</a></button>
+            </li>
+            <li>
+              <button class="btn" id="navBar_Btn_Login_ID"><a id="navBar_href_Login_ID" href="Login.html">Login</a></button>
             </li>
           </ul>
         </nav>
       </header>
     </div>
-    <div class="formarea">
-      <h3>Contact Form</h3>
+    <div class="formarea" id="formarea_ID">
+      <h3 id="CF_ID">Contact Form</h3>
       <div class="background">
         <div class="container">
           <form action="/action_page.php">
-            <label for="fname">First Name</label>
+            <label for="fname" id="label_FN_ID">First Name</label>
             <input
               type="text"
               id="fname"
@@ -46,7 +50,7 @@
               placeholder="Your name.."
             />
 
-            <label for="lname">Last Name</label>
+            <label for="lname" id="label_LN_ID">Last Name</label>
             <input
               type="text"
               id="lname"
@@ -54,14 +58,14 @@
               placeholder="Your last name.."
             />
 
-            <label for="country">Country</label>
+            <label for="country" id="label_C_ID">Country</label>
             <select id="country" name="country">
               <option value="australia">Australia</option>
               <option value="canada">Canada</option>
               <option value="usa">USA</option>
             </select>
 
-            <label for="subject">Subject</label>
+            <label for="subject" id="label_S_ID">Subject</label>
             <textarea
               id="subject"
               name="subject"
@@ -69,43 +73,43 @@
               style="height: 200px"
             ></textarea>
 
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" id="fa_Submit_ID" />
           </form>
         </div>
       </div>
     </div>
 
-    <footer>
+    <footer id="footer_ID">
       <section class="one">
-        <h3>Contact Us</h3>
+        <h3 id="footer_C_ID">Contact Us</h3>
         <li class="contactlinks">
-          <a href="Contact.html">Send us a message</a>
+          <a href="Contact.html" id="footer_C_A_ID">Send us a message</a>
         </li>
         <li class="contactlinks">
-          <a href="https://mail.google.com/">Email us</a>
+          <a href="https://mail.google.com/" id="footer_C_B_ID">Email us</a>
         </li>
-        <h3>Our address</h3>
-        <p>123 Maxx Power Way<br />Los Angeles, CA,52632</p>
+        <h3 id="footer_OA_ID">Our address</h3>
+        <p id="footer_OB_ID">123 Maxx Power Way<br />Los Angeles, CA,52632</p>
       </section>
       <section class="two">
-        <h3>Products</h3>
+        <h3 id="footer_P_ID">Products</h3>
         <li class="contactlinks">
-          <a
+          <a id="footer_P_A_ID"
             href="https://www.electricgeneratorsdirect.com/Generac-Guardian-7291-SD-Standby-Generator/p138539.html"
             >Generaters</a
           >
         </li>
       </section>
       <section class="three">
-        <h3>Follow us</h3>
+        <h3 id="footer_F_ID">Follow us</h3>
         <li class="contactlinks">
-          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.facebook.com/" id="footer_F_A_ID">Facebook</a>
         </li>
         <li class="contactlinks">
-          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.instagram.com/" id="footer_F_B_ID">Instagram</a>
         </li>
         <li class="contactlinks">
-          <a href="https://www.linkedin.com/">linkedin</a>
+          <a href="https://www.linkedin.com/" id="footer_F_C_ID">linkedin</a>
         </li>
       </section>
     </footer>

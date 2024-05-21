@@ -32,6 +32,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script type="text/javascript" src="./js/Accessibility_ColorModes.js"></script> />
 
+    <script type="text/javascript" src="./js/DataPage.js"></script> />
+
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -42,7 +44,7 @@
   <div class="container">
     <header>
       <!-- Noman doing main NavBar Home,Contact,About & Login Here   -->
-        <img src="images/MPG-Image.jpg" alt="MPG Company Logo" />
+      <img src="images/MPG-Image.jpg" alt="MPG Company Logo" style="width: 35%">
         <nav aria-label="Main navigation" class="navbar">
         </nav>
         <head>
@@ -71,8 +73,8 @@
             background-color: #111;
           }
           </style>
-          </head> -->
-
+          </head>
+          <body>
 
           <ul>
             <li><a class="active" href="Index.html">Home</a></li>
@@ -85,18 +87,18 @@
       <!-- Henry doing Data NavBar Here - DC Power, AC Power, Daily Yield, Total Yield -->
 
       <nav aria-label="Data navigation" class="container">
-        <ul>
+        <ul  id="DataNav_ID">
           <li>
-            <button class="button button-primary">DC Power</button>
+            <button class="button button-primary" onclick="changeData_DCP()" id="DN_DC_ID">DC Power</button>
           </li>
           <li>
-            <button class="button button-primary">AC Power</button>
+            <button class="button button-primary" onclick="changeData_ACP()" id="DN_AC_ID">AC Power</button>
           </li>
           <li>
-            <button class="button button-primary">Daily Yield</button>
+            <button class="button button-primary" onclick="changeData_DY()" id="DN_DY_ID">Daily Yield</button>
           </li>
           <li>
-            <button class="button button-primary">Total Yield</button>
+            <button class="button button-primary" onclick="changeData_TY()" id="DN_TY_ID">Total Yield</button>
           </li>
         </ul>
       </nav>
@@ -126,42 +128,39 @@
     </div>
 
     <!-- John is doing the Website footer Here -->
-    <footer>
+    <footer id="footer_ID">
+      <section class="one">
+        <h3 id="footer_C_ID">Contact Us</h3>
+        <li class="contactlinks">
+          <a href="Contact.html" id="footer_C_A_ID">Send us a message</a>
+        </li>
+        <li class="contactlinks">
+          <a href="https://mail.google.com/" id="footer_C_B_ID">Email us</a>
+        </li>
+        <h3 id="footer_OA_ID">Our address</h3>
+        <p id="footer_OB_ID">123 Maxx Power Way<br />Los Angeles, CA,52632</p>
+      </section>
+      <section class="two">
+        <h3 id="footer_P_ID">Products</h3>
+        <li class="contactlinks">
+          <a id="footer_P_A_ID"
+            href="https://www.electricgeneratorsdirect.com/Generac-Guardian-7291-SD-Standby-Generator/p138539.html">Generaters</a>
+        </li>
+      </section>
+      <section class="three">
+        <h3 id="footer_F_ID">Follow us</h3>
+        <li class="contactlinks">
+          <a href="https://www.facebook.com/" id="footer_F_A_ID">Facebook</a>
+        </li>
+        <li class="contactlinks">
+          <a href="https://www.instagram.com/" id="footer_F_B_ID">Instagram</a>
+        </li>
+        <li class="contactlinks">
+          <a href="https://www.linkedin.com/" id="footer_F_C_ID">linkedin</a>
+        </li>
+      </section>
+    </footer>
 
-              <section class="one">
-          <h3>Contact Us</h3>
-          <li class="contactlinks">
-            <a href="Contact.html">Send us a message</a>
-          </li>
-          <li class="contactlinks">
-            <a href="https://mail.google.com/">Email us</a>
-          </li>
-          <h3>Our address</h3>
-          <p>123 Maxx Power Way<br />Los Angeles, CA,52632</p>
-        </section>
-        <section class="two">
-          <h3>Products</h3>
-          <li class="contactlinks">
-            <a
-              href="https://www.electricgeneratorsdirect.com/Generac-Guardian-7291-SD-Standby-Generator/p138539.html"
-              >Generaters</a
-            >
-          </li>
-        </section>
-        <section class="three">
-          <h3>Follow us</h3>
-          <li class="contactlinks">
-            <a href="https://www.facebook.com/">Facebook</a>
-          </li>
-          <li class="contactlinks">
-            <a href="https://www.instagram.com/">Instagram</a>
-          </li>
-          <li class="contactlinks">
-            <a href="https://www.linkedin.com/">linkedin</a>
-          </li>
-        </section>
-      </footer>
-  </div>
     <!-- End Document
 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

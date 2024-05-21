@@ -1,5 +1,20 @@
 .toggleColorBtn {
-    color: red;
-    background-color: blue;
+    color: white;
+    background-color: rgba(126, 143, 159, 0.514);
     float: right;
+}
+.DarkMode {
+    color: #ffffff;
+    background-color: #13294B;
+    border: 1px solid #ffffff;
+}
+.LightMode {
+    color: #4f4f4f;
+    background-color: #ffffff;
+    border: 1px solid #4f4f4f;
+}
+.horizontalPosition {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
