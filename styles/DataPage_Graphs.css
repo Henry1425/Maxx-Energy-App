@@ -1,9 +1,7 @@
 .Graphs_Body {
-    /* width: 50%;
-    height: 50%; */
-    width: 750px;
-    height: 250px;
-    background-color: rgb(255, 225, 0, 0.5);
+    width: 75%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
     margin: auto;
 }
 .Graphs_Data {
@@ -12,7 +10,7 @@
     justify-content: center;
     width: 95%;
     height: 95%;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(126, 143, 159, 0.514);
     margin: auto;
 }
 .Graphs_Col {
@@ -25,16 +23,20 @@
 .Graphs_AA {
     width: 95%;
     height: 15%;
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: rgba(130, 130, 130, 1);
     margin: auto;
     border: 1px inset black;
+    font-family:"Calibri", sans-serif;
+    font-weight: bold;
 }
 .Graphs_AB {
     width: 95%;
     height: 75%;
-    background-color: rgba(0, 255, 0, 0.5);
+    background-color: rgba(130, 130, 130, 1);
     margin: auto;
     border: 1px inset black;
+    font-family:"Calibri", sans-serif;
+    font-weight: bold;
 }
 .Graphs_AB img {
     width: 100%;
@@ -43,14 +45,18 @@
 .Graphs_BA {
     width: 95%;
     height: 45%;
-    background-color: rgba(0, 255, 255, 0.5);
+    background-color: rgba(130, 130, 130, 1);
     margin: auto;
     border: 1px inset black;
+    font-family:"Calibri", sans-serif;
+    font-weight: bold;
 }
 .Graphs_BB {
     width: 95%;
     height: 45%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(130, 130, 130, 1);
     margin: auto;
     border: 1px inset black;
+    font-family:"Calibri", sans-serif;
+    font-weight: bold;
 }
