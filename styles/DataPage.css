@@ -1,6 +1,15 @@
 /* Put your CSS Here */
 
+body {
+    background-image: url(../images/background-Image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 
+    position:absolute;
+    top:0; bottom:0; right:0; left:0;
+    }
  ul {
   display: flex;
   flex-direction: row;

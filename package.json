@@ -1,0 +1,26 @@
+{
+  "name": "maxx-energy-app",
+  "version": "1.0.0",
+  "description": "MaxProGen Website",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henry1425/Maxx-Energy-App.git"
+  },
+  "keywords": [],
+  "author": "Henry Acosta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henry1425/Maxx-Energy-App/issues"
+  },
+  "homepage": "https://github.com/Henry1425/Maxx-Energy-App#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
