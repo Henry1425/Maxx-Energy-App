@@ -1,13 +1,11 @@
 /* Put your CSS Here */
 
 header {
-
 justify-content: center;
+width: 75%;
+height: 30%;
 text-align: center;
 margin: auto;
-  width: 75%;
- height: 50%;
- margin: auto;
  background-color: rgba(126, 143, 159, 0.514);
 color:  white;
 
