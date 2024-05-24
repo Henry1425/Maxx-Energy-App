@@ -126,7 +126,9 @@ var AP_changedElements_borders = [
     "navBar_Btn_Data_ID",
     "navBar_Btn_Contact_ID",
     "navBar_Btn_About_ID",
-    "navBar_Btn_Login_ID"
+    "navBar_Btn_Login_ID",
+
+    "aboutMax_Info_ID"
     
 ];
 
@@ -303,7 +305,7 @@ function changeModes(Mode) {
                 document.getElementById(LP_changedElements[i]).style.color = ColorA;
                 document.getElementById(LP_changedElements[i]).style.background = ColorB;
             }
-            for (let i = 0; i < LP_changedElements_borders.length.length; i++) {
+            for (let i = 0; i < LP_changedElements_borders.length; i++) {
                 document.getElementById(LP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
         }
@@ -312,7 +314,7 @@ function changeModes(Mode) {
                 document.getElementById(DP_changedElements[i]).style.color = ColorA;
                 document.getElementById(DP_changedElements[i]).style.background = ColorB;
             }
-            for (let i = 0; i < DP_changedElements_borders.length.length; i++) {
+            for (let i = 0; i < DP_changedElements_borders.length; i++) {
                 document.getElementById(DP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
         }
@@ -340,7 +342,7 @@ function changeModes(Mode) {
                 document.getElementById(AP_changedElements[i]).style.color = ColorA;
                 document.getElementById(AP_changedElements[i]).style.background = ColorB;
             }
-            for (let i = 0; i < AP_changedElements_borders.length.length; i++) {
+            for (let i = 0; i < AP_changedElements_borders.length; i++) {
                 document.getElementById(AP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
         }
