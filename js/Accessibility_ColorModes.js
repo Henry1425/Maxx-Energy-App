@@ -67,7 +67,7 @@ var CP_changedElements = [
     "formarea_ID",
     "fname", "label_FN_ID",
     "lname", "label_LN_ID",
-    "country", "label_C_ID",
+    "country", "label_C_ID", "australia_ID", "canada_ID", "usa_ID",
     "subject", "label_S_ID",
 
 
@@ -138,6 +138,8 @@ var AP_defaultColors_b = [];
 var DP_changedElements = [
     "tcbID",
 
+    "dp_header_ID",
+
     "navBar_ID",
     "navBar_href_Index_ID",
     "navBar_href_Contact_ID",
@@ -173,7 +175,7 @@ var DP_changedElements_borders = [
     "DN_TY_ID",
 
     "Graphs_Body_ID",
-    "Graphs_Data_ID",
+    // "Graphs_Data_ID",
     "Graphs_AA_ID",
     "Graphs_AB_ID",
     "Graphs_BA_ID",
@@ -270,6 +272,9 @@ function changeModes(Mode) {
             for (let i = 0; i < CP_changedElements_borders.length; i++) {
                 document.getElementById(CP_changedElements_borders[i]).style.border = CP_defaultColors_b[i];
             }
+            document.getElementById("fname").className = "ph_D";
+            document.getElementById("lname").className = "ph_D";
+            document.getElementById("subject").className = "ph_D";
         }
         else if (currentPage == "AP") {
             for (let i = 0; i < AP_changedElements.length; i++) {
@@ -298,7 +303,7 @@ function changeModes(Mode) {
                 document.getElementById(LP_changedElements[i]).style.color = ColorA;
                 document.getElementById(LP_changedElements[i]).style.background = ColorB;
             }
-            for (let i = 0; i < LP_changedElements.length; i++) {
+            for (let i = 0; i < LP_changedElements_borders.length.length; i++) {
                 document.getElementById(LP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
         }
@@ -307,7 +312,7 @@ function changeModes(Mode) {
                 document.getElementById(DP_changedElements[i]).style.color = ColorA;
                 document.getElementById(DP_changedElements[i]).style.background = ColorB;
             }
-            for (let i = 0; i < DP_changedElements.length; i++) {
+            for (let i = 0; i < DP_changedElements_borders.length.length; i++) {
                 document.getElementById(DP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
         }
@@ -316,8 +321,18 @@ function changeModes(Mode) {
                 document.getElementById(CP_changedElements[i]).style.color = ColorA;
                 document.getElementById(CP_changedElements[i]).style.background = ColorB;
             }
-            for (let i = 0; i < CP_changedElements.length; i++) {
+            for (let i = 0; i < CP_changedElements_borders.length; i++) {
                 document.getElementById(CP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
+            }
+            if (Mode == "LM") {
+                document.getElementById("fname").className = "ph_LM";
+                document.getElementById("lname").className = "ph_LM";
+                document.getElementById("subject").className = "ph_LM";
+            }
+            else if (Mode == "DM") {
+                document.getElementById("fname").className = "ph_DM";
+                document.getElementById("lname").className = "ph_DM";
+                document.getElementById("subject").className = "ph_DM";
             }
         }
         else if (currentPage == "AP") {
@@ -325,7 +340,7 @@ function changeModes(Mode) {
                 document.getElementById(AP_changedElements[i]).style.color = ColorA;
                 document.getElementById(AP_changedElements[i]).style.background = ColorB;
             }
-            for (let i = 0; i < AP_changedElements.length; i++) {
+            for (let i = 0; i < AP_changedElements_borders.length.length; i++) {
                 document.getElementById(AP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
         }
