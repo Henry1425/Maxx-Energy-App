@@ -197,12 +197,59 @@ var DM_text = "#ffffff";
 var DM_bgc = "#13294B";
 
 //Color Swaping
-var currentColorMode = "Default";
+var currentColorMode = "";
 var currentPage = "";
 var LP_defaultColorsSaved = false;
 var DP_defaultColorsSaved = false;
 var CP_defaultColorsSaved = false;
 var AP_defaultColorsSaved = false;
+
+//Carries over current color mode from the previous page
+function onloadPageForColorMode(c) {
+    //Sets the current page
+    currentPage = c;
+    //Gets mode of previous page
+    let possibleMode = parent.document.URL.substring(parent.document.URL.indexOf('?cm='), parent.document.URL.length);
+    possibleMode = possibleMode.substring(possibleMode.indexOf('=') + 1, possibleMode.length);
+    if (possibleMode == "LightMode" || possibleMode == "DarkMode") {
+        currentColorMode = possibleMode;;
+    }
+    else {
+        currentColorMode = "Default";
+    }
+    updateLinks();
+
+    //Makes sure current pages default settings are loaded
+    if (!LP_defaultColorsSaved && currentPage == "LP") {
+        getDefaultColors();
+        LP_defaultColorsSaved = true;
+    }
+    else if (!DP_defaultColorsSaved && currentPage == "DP") {
+        getDefaultColors();
+        DP_defaultColorsSaved = true;
+    }
+    else if (!CP_defaultColorsSaved && currentPage == "CP") {
+        getDefaultColors();
+        CP_defaultColorsSaved = true;
+    }
+    else if (!AP_defaultColorsSaved && currentPage == "AP") {
+        getDefaultColors();
+        AP_defaultColorsSaved = true;
+    }
+    //Applies current color mode
+    if (currentColorMode == "Default") {
+        document.getElementById("tcbID").innerHTML = "Default";
+        changeModes("D");
+    }
+    else if (currentColorMode == "LightMode") {
+        document.getElementById("tcbID").innerHTML = "Light Mode";
+        changeModes("LM");
+    }
+    else if (currentColorMode == "DarkMode") {
+        document.getElementById("tcbID").innerHTML = "Dark Mode";
+        changeModes("DM");
+    }
+}
 
 //Sets the color mode to the next
 function toggleColorMode(thePage) {
@@ -242,6 +289,7 @@ function toggleColorMode(thePage) {
         currentColorMode = "Default";
         changeModes("D");
     }
+    updateLinks();
 }
 
 //Applies color changes
@@ -387,4 +435,16 @@ function getDefaultColors() {
             AP_defaultColors_b.push(document.getElementById(AP_changedElements_borders[i]).style.border);
         }
     }
+}
+
+//Updates the links in the Nav buttons
+function updateLinks() {
+    let addedL = "?cm=" + currentColorMode;
+    document.getElementById("navBar_href_Index_ID").href = "index.html" + addedL;
+    if (currentPage != "DP") {//Data Page doesn't have a button for itself
+        document.getElementById("navBar_href_Data_ID").href = "DataPage.html" + addedL;
+    }
+    document.getElementById("navBar_href_Contact_ID").href = "Contact.html" + addedL;
+    document.getElementById("navBar_href_About_ID").href = "AboutPage.html" + addedL;
+    document.getElementById("navBar_href_Login_ID").href = "Login.html" + addedL;
 }
