@@ -51,6 +51,7 @@ var LP_changedElements_borders = [
 var LP_defaultColors_f = [];
 var LP_defaultColors_bgc = [];
 var LP_defaultColors_bgi = "url(../images/background-Image.jpg)";
+var LP_defaultColors_logo = "images/MPG-Image.jpg";
 var LP_defaultColors_b = [];
 
 //Default coloring for Contact Page
@@ -98,6 +99,7 @@ var CP_changedElements_borders = [
 var CP_defaultColors_f = [];
 var CP_defaultColors_bgc = [];
 var CP_defaultColors_bgi = "url(../images/background-Image.jpg)";
+var CP_defaultColors_logo = "images/MPG-Image.jpg";
 var CP_defaultColors_b = [];
 
 //Default coloring for About Page
@@ -111,6 +113,7 @@ var AP_changedElements = [
     "navBar_href_About_ID",
     "navBar_href_Login_ID",
 
+    "aboutMax_Title_ID",
     "aboutMax_Info_ID",
 
     "footer_ID",
@@ -137,6 +140,7 @@ var AP_changedElements_borders = [
 var AP_defaultColors_f = [];
 var AP_defaultColors_bgc = [];
 var AP_defaultColors_bgi = "url(../images/background-Image.jpg)";
+var AP_defaultColors_logo = "images/MPG-Image.jpg";
 var AP_defaultColors_b = [];
 
 //Default coloring for Data Page
@@ -190,6 +194,7 @@ var DP_changedElements_borders = [
 var DP_defaultColors_f = [];
 var DP_defaultColors_bgc = [];
 var DP_defaultColors_bgi = "url(../images/background-Image.jpg)";
+var DP_defaultColors_logo = "images/MPG-Image.jpg";
 var DP_defaultColors_b = [];
 
 //Default coloring for Login Page
@@ -213,17 +218,20 @@ var OP_changedElements_borders = [
 var OP_defaultColors_f = [];
 var OP_defaultColors_bgc = [];
 var OP_defaultColors_bgi = "url(../images/background-Image.jpg)";
+var OP_defaultColors_logo = "images/MPG-Image.jpg";
 var OP_defaultColors_b = [];
 
 //Light mode
 var LM_text = "#4f4f4f";
 var LM_bgc = "#ffffff";
 var LM_bgi = "url(./images/Background_Alts/bgi_lm.jpg)";
+var LM_logo = "images/Icon_Alts/MPG_LM.jpg";
 
 //Dark mode
 var DM_text = "#ffffff";
 var DM_bgc = "#13294B";
 var DM_bgi = "url(./images/Background_Alts/bgi_dm.jpg)";
+var DM_logo = "images/Icon_Alts/MPG_DM.jpg";
 
 //Color Swaping
 var currentColorMode = "";
@@ -343,6 +351,7 @@ function changeModes(Mode) {
                 document.getElementById(LP_changedElements_borders[i]).style.border = LP_defaultColors_b[i];
             }
             document.body.style.backgroundImage = LP_defaultColors_bgi;
+            document.getElementById("LogoIcon_ID").src = LP_defaultColors_logo;
         }
         else if (currentPage == "DP") {
             for (let i = 0; i < DP_changedElements.length; i++) {
@@ -353,6 +362,7 @@ function changeModes(Mode) {
                 document.getElementById(DP_changedElements_borders[i]).style.border = DP_defaultColors_b[i];
             }
             document.body.style.backgroundImage = DP_defaultColors_bgi;
+            document.getElementById("LogoIcon_ID").src = DP_defaultColors_logo;
         }
         else if (currentPage == "CP") {
             for (let i = 0; i < CP_changedElements.length; i++) {
@@ -363,6 +373,7 @@ function changeModes(Mode) {
                 document.getElementById(CP_changedElements_borders[i]).style.border = CP_defaultColors_b[i];
             }
             document.body.style.backgroundImage = CP_defaultColors_bgi;
+            document.getElementById("LogoIcon_ID").src = CP_defaultColors_logo;
             document.getElementById("fname").className = "ph_D";
             document.getElementById("lname").className = "ph_D";
             document.getElementById("subject").className = "ph_D";
@@ -376,6 +387,7 @@ function changeModes(Mode) {
                 document.getElementById(AP_changedElements_borders[i]).style.border = AP_defaultColors_b[i];
             }
             document.body.style.backgroundImage = AP_defaultColors_bgi;
+            document.getElementById("LogoIcon_ID").src = AP_defaultColors_logo;
         }
         else if (currentPage == "OP") {
             for (let i = 0; i < OP_changedElements.length; i++) {
@@ -385,6 +397,7 @@ function changeModes(Mode) {
             for (let i = 0; i < OP_changedElements_borders.length; i++) {
                 document.getElementById(OP_changedElements_borders[i]).style.border = OP_defaultColors_b[i];
             }
+            document.getElementById("LogoIcon_ID").src = OP_defaultColors_logo;
             document.body.style.backgroundImage = OP_defaultColors_bgi;
             document.getElementById("first").className = "ph_D";
             document.getElementById("password").className = "ph_D";
@@ -395,15 +408,18 @@ function changeModes(Mode) {
         let ColorA = "";
         let ColorB = "";
         let ColorC = "";
+        let ColorD = "";
         if (Mode == "LM") {
             ColorA = LM_text;
             ColorB = LM_bgc;
             ColorC = LM_bgi;
+            ColorD = LM_logo;
         }
         else if (Mode == "DM") {
             ColorA = DM_text;
             ColorB = DM_bgc;
             ColorC = DM_bgi;
+            ColorD = DM_logo;
         }
         if (currentPage == "LP") {
             for (let i = 0; i < LP_changedElements.length; i++) {
@@ -414,6 +430,7 @@ function changeModes(Mode) {
                 document.getElementById(LP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
             document.body.style.backgroundImage = ColorC;
+            document.getElementById("LogoIcon_ID").src = ColorD;
         }
         else if (currentPage == "DP") {
             for (let i = 0; i < DP_changedElements.length; i++) {
@@ -424,6 +441,7 @@ function changeModes(Mode) {
                 document.getElementById(DP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
             document.body.style.backgroundImage = ColorC;
+            document.getElementById("LogoIcon_ID").src = ColorD;
         }
         else if (currentPage == "CP") {
             for (let i = 0; i < CP_changedElements.length; i++) {
@@ -444,6 +462,7 @@ function changeModes(Mode) {
                 document.getElementById("subject").className = "ph_DM";
             }
             document.body.style.backgroundImage = ColorC;
+            document.getElementById("LogoIcon_ID").src = ColorD;
         }
         else if (currentPage == "AP") {
             for (let i = 0; i < AP_changedElements.length; i++) {
@@ -454,6 +473,7 @@ function changeModes(Mode) {
                 document.getElementById(AP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
             document.body.style.backgroundImage = ColorC;
+            document.getElementById("LogoIcon_ID").src = ColorD;
         }
         else if (currentPage == "OP") {
             for (let i = 0; i < OP_changedElements.length; i++) {
@@ -464,6 +484,7 @@ function changeModes(Mode) {
                 document.getElementById(OP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
             document.body.style.backgroundImage = ColorC;
+            document.getElementById("LogoIcon_ID").src = ColorD;
             if (Mode == "LM") {
                 document.getElementById("first").className = "ph_LM";
                 document.getElementById("password").className = "ph_LM";
