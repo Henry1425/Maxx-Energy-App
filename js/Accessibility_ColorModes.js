@@ -192,6 +192,29 @@ var DP_defaultColors_bgc = [];
 var DP_defaultColors_bgi = "url(../images/background-Image.jpg)";
 var DP_defaultColors_b = [];
 
+//Default coloring for Login Page
+var OP_changedElements = [
+    "tcbID",
+    "main_ID",
+    "label_user_ID", "first",
+    "label_pass_ID", "password",
+    "sumbit_ID",
+    "reg_ID",
+    "crAc_ID"
+];
+
+var OP_changedElements_borders = [
+    "tcbID",
+    "first",
+    "password",
+    "sumbit_ID"
+];
+
+var OP_defaultColors_f = [];
+var OP_defaultColors_bgc = [];
+var OP_defaultColors_bgi = "url(../images/background-Image.jpg)";
+var OP_defaultColors_b = [];
+
 //Light mode
 var LM_text = "#4f4f4f";
 var LM_bgc = "#ffffff";
@@ -209,6 +232,7 @@ var LP_defaultColorsSaved = false;
 var DP_defaultColorsSaved = false;
 var CP_defaultColorsSaved = false;
 var AP_defaultColorsSaved = false;
+var OP_defaultColorsSaved = false;
 
 //Carries over current color mode from the previous page
 function onloadPageForColorMode(c) {
@@ -241,6 +265,10 @@ function onloadPageForColorMode(c) {
     else if (!AP_defaultColorsSaved && currentPage == "AP") {
         getDefaultColors();
         AP_defaultColorsSaved = true;
+    }
+    else if (!OP_defaultColorsSaved && currentPage == "OP") {
+        getDefaultColors();
+        OP_defaultColorsSaved = true;
     }
     //Applies current color mode
     if (currentColorMode == "Default") {
@@ -277,6 +305,10 @@ function toggleColorMode(thePage) {
     else if (!AP_defaultColorsSaved && currentPage == "AP") {
         getDefaultColors();
         AP_defaultColorsSaved = true;
+    }
+    else if (!OP_defaultColorsSaved && currentPage == "OP") {
+        getDefaultColors();
+        OP_defaultColorsSaved = true;
     }
 
     //Applies new mode colors
@@ -345,6 +377,18 @@ function changeModes(Mode) {
             }
             document.body.style.backgroundImage = AP_defaultColors_bgi;
         }
+        else if (currentPage == "OP") {
+            for (let i = 0; i < OP_changedElements.length; i++) {
+                document.getElementById(OP_changedElements[i]).style.color = OP_defaultColors_f[i];
+                document.getElementById(OP_changedElements[i]).style.background = OP_defaultColors_bgc[i];
+            }
+            for (let i = 0; i < OP_changedElements_borders.length; i++) {
+                document.getElementById(OP_changedElements_borders[i]).style.border = OP_defaultColors_b[i];
+            }
+            document.body.style.backgroundImage = OP_defaultColors_bgi;
+            document.getElementById("first").className = "ph_D";
+            document.getElementById("password").className = "ph_D";
+        }
     }
     else {
         //Applies new colors matching the current mode
@@ -411,6 +455,24 @@ function changeModes(Mode) {
             }
             document.body.style.backgroundImage = ColorC;
         }
+        else if (currentPage == "OP") {
+            for (let i = 0; i < OP_changedElements.length; i++) {
+                document.getElementById(OP_changedElements[i]).style.color = ColorA;
+                document.getElementById(OP_changedElements[i]).style.background = ColorB;
+            }
+            for (let i = 0; i < OP_changedElements_borders.length; i++) {
+                document.getElementById(OP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
+            }
+            document.body.style.backgroundImage = ColorC;
+            if (Mode == "LM") {
+                document.getElementById("first").className = "ph_LM";
+                document.getElementById("password").className = "ph_LM";
+            }
+            else if (Mode == "DM") {
+                document.getElementById("first").className = "ph_DM";
+                document.getElementById("password").className = "ph_DM";
+            }
+        }
     }
 }
 
@@ -452,16 +514,30 @@ function getDefaultColors() {
             AP_defaultColors_b.push(document.getElementById(AP_changedElements_borders[i]).style.border);
         }
     }
+    else if (currentPage == "OP") {
+        for (let i = 0; i < OP_changedElements.length; i++) {
+            OP_defaultColors_f.push(document.getElementById(OP_changedElements[i]).style.color);
+            OP_defaultColors_bgc.push(document.getElementById(OP_changedElements[i]).style.background);
+        }
+        for (let i = 0; i < OP_changedElements_borders.length; i++) {
+            OP_defaultColors_b.push(document.getElementById(OP_changedElements_borders[i]).style.border);
+        }
+    }
 }
 
 //Updates the links in the Nav buttons
 function updateLinks() {
     let addedL = "?cm=" + currentColorMode;
-    document.getElementById("navBar_href_Index_ID").href = "index.html" + addedL;
-    if (currentPage != "DP") {//Data Page doesn't have a button for itself
-        document.getElementById("navBar_href_Data_ID").href = "DataPage.html" + addedL;
+    if (currentPage != "OP") {
+        document.getElementById("navBar_href_Index_ID").href = "index.html" + addedL;
+        if (currentPage != "DP") {//Data Page doesn't have a button for itself
+            document.getElementById("navBar_href_Data_ID").href = "DataPage.html" + addedL;
+        }
+        document.getElementById("navBar_href_Contact_ID").href = "Contact.html" + addedL;
+        document.getElementById("navBar_href_About_ID").href = "AboutPage.html" + addedL;
+        document.getElementById("navBar_href_Login_ID").href = "Login.html" + addedL;
     }
-    document.getElementById("navBar_href_Contact_ID").href = "Contact.html" + addedL;
-    document.getElementById("navBar_href_About_ID").href = "AboutPage.html" + addedL;
-    document.getElementById("navBar_href_Login_ID").href = "Login.html" + addedL;
+    else if (currentPage == "OP") {
+        document.getElementById("navBar_href_Index_ID").href = "index.html" + addedL;
+    }
 }
