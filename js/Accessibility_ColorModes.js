@@ -50,6 +50,7 @@ var LP_changedElements_borders = [
 
 var LP_defaultColors_f = [];
 var LP_defaultColors_bgc = [];
+var LP_defaultColors_bgi = "url(../images/background-Image.jpg)";
 var LP_defaultColors_b = [];
 
 //Default coloring for Contact Page
@@ -96,6 +97,7 @@ var CP_changedElements_borders = [
 
 var CP_defaultColors_f = [];
 var CP_defaultColors_bgc = [];
+var CP_defaultColors_bgi = "url(../images/background-Image.jpg)";
 var CP_defaultColors_b = [];
 
 //Default coloring for About Page
@@ -134,6 +136,7 @@ var AP_changedElements_borders = [
 
 var AP_defaultColors_f = [];
 var AP_defaultColors_bgc = [];
+var AP_defaultColors_bgi = "url(../images/background-Image.jpg)";
 var AP_defaultColors_b = [];
 
 //Default coloring for Data Page
@@ -186,15 +189,18 @@ var DP_changedElements_borders = [
 
 var DP_defaultColors_f = [];
 var DP_defaultColors_bgc = [];
+var DP_defaultColors_bgi = "url(../images/background-Image.jpg)";
 var DP_defaultColors_b = [];
 
 //Light mode
 var LM_text = "#4f4f4f";
 var LM_bgc = "#ffffff";
+var LM_bgi = "url(./images/Background_Alts/bgi_lm.jpg)";
 
 //Dark mode
 var DM_text = "#ffffff";
 var DM_bgc = "#13294B";
+var DM_bgi = "url(./images/Background_Alts/bgi_dm.jpg)";
 
 //Color Swaping
 var currentColorMode = "";
@@ -304,6 +310,7 @@ function changeModes(Mode) {
             for (let i = 0; i < LP_changedElements_borders.length; i++) {
                 document.getElementById(LP_changedElements_borders[i]).style.border = LP_defaultColors_b[i];
             }
+            document.body.style.backgroundImage = LP_defaultColors_bgi;
         }
         else if (currentPage == "DP") {
             for (let i = 0; i < DP_changedElements.length; i++) {
@@ -313,6 +320,7 @@ function changeModes(Mode) {
             for (let i = 0; i < DP_changedElements_borders.length; i++) {
                 document.getElementById(DP_changedElements_borders[i]).style.border = DP_defaultColors_b[i];
             }
+            document.body.style.backgroundImage = DP_defaultColors_bgi;
         }
         else if (currentPage == "CP") {
             for (let i = 0; i < CP_changedElements.length; i++) {
@@ -322,6 +330,7 @@ function changeModes(Mode) {
             for (let i = 0; i < CP_changedElements_borders.length; i++) {
                 document.getElementById(CP_changedElements_borders[i]).style.border = CP_defaultColors_b[i];
             }
+            document.body.style.backgroundImage = CP_defaultColors_bgi;
             document.getElementById("fname").className = "ph_D";
             document.getElementById("lname").className = "ph_D";
             document.getElementById("subject").className = "ph_D";
@@ -334,19 +343,23 @@ function changeModes(Mode) {
             for (let i = 0; i < AP_changedElements_borders.length; i++) {
                 document.getElementById(AP_changedElements_borders[i]).style.border = AP_defaultColors_b[i];
             }
+            document.body.style.backgroundImage = AP_defaultColors_bgi;
         }
     }
     else {
         //Applies new colors matching the current mode
         let ColorA = "";
         let ColorB = "";
+        let ColorC = "";
         if (Mode == "LM") {
             ColorA = LM_text;
             ColorB = LM_bgc;
+            ColorC = LM_bgi;
         }
         else if (Mode == "DM") {
             ColorA = DM_text;
             ColorB = DM_bgc;
+            ColorC = DM_bgi;
         }
         if (currentPage == "LP") {
             for (let i = 0; i < LP_changedElements.length; i++) {
@@ -356,6 +369,7 @@ function changeModes(Mode) {
             for (let i = 0; i < LP_changedElements_borders.length; i++) {
                 document.getElementById(LP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
+            document.body.style.backgroundImage = ColorC;
         }
         else if (currentPage == "DP") {
             for (let i = 0; i < DP_changedElements.length; i++) {
@@ -365,6 +379,7 @@ function changeModes(Mode) {
             for (let i = 0; i < DP_changedElements_borders.length; i++) {
                 document.getElementById(DP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
+            document.body.style.backgroundImage = ColorC;
         }
         else if (currentPage == "CP") {
             for (let i = 0; i < CP_changedElements.length; i++) {
@@ -384,6 +399,7 @@ function changeModes(Mode) {
                 document.getElementById("lname").className = "ph_DM";
                 document.getElementById("subject").className = "ph_DM";
             }
+            document.body.style.backgroundImage = ColorC;
         }
         else if (currentPage == "AP") {
             for (let i = 0; i < AP_changedElements.length; i++) {
@@ -393,6 +409,7 @@ function changeModes(Mode) {
             for (let i = 0; i < AP_changedElements_borders.length; i++) {
                 document.getElementById(AP_changedElements_borders[i]).style.border = "1px solid " + ColorA;
             }
+            document.body.style.backgroundImage = ColorC;
         }
     }
 }
