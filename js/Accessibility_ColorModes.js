@@ -3,7 +3,6 @@ var LP_changedElements = [
     "tcbID",
 
     "navBar_ID",
-    "navBar_href_Index_ID",
     "navBar_href_Data_ID",
     "navBar_href_Contact_ID",
     "navBar_href_About_ID",
@@ -34,7 +33,6 @@ var LP_changedElements = [
 var LP_changedElements_borders = [
     "tcbID",
 
-    "navBar_Btn_Index_ID",
     "navBar_Btn_Data_ID",
     "navBar_Btn_Contact_ID",
     "navBar_Btn_About_ID",
@@ -61,7 +59,6 @@ var CP_changedElements = [
     "navBar_ID",
     "navBar_href_Index_ID",
     "navBar_href_Data_ID",
-    "navBar_href_Contact_ID",
     "navBar_href_About_ID",
     "navBar_href_Login_ID",
 
@@ -90,7 +87,6 @@ var CP_changedElements_borders = [
 
     "navBar_Btn_Index_ID",
     "navBar_Btn_Data_ID",
-    "navBar_Btn_Contact_ID",
     "navBar_Btn_About_ID",
     "navBar_Btn_Login_ID"
     
@@ -110,7 +106,6 @@ var AP_changedElements = [
     "navBar_href_Index_ID",
     "navBar_href_Data_ID",
     "navBar_href_Contact_ID",
-    "navBar_href_About_ID",
     "navBar_href_Login_ID",
 
     "aboutMax_Title_ID",
@@ -130,7 +125,6 @@ var AP_changedElements_borders = [
     "navBar_Btn_Index_ID",
     "navBar_Btn_Data_ID",
     "navBar_Btn_Contact_ID",
-    "navBar_Btn_About_ID",
     "navBar_Btn_Login_ID",
 
     "aboutMax_Info_ID"
@@ -582,13 +576,21 @@ function getDefaultColors() {
 function updateLinks() {
     let addedL = "?cm=" + currentColorMode;
     if (currentPage != "OP") {
-        document.getElementById("navBar_href_Index_ID").href = "index.html" + addedL;
-        if (currentPage != "DP") {//Data Page doesn't have a button for itself
+        if (currentPage != "LP") {
+            document.getElementById("navBar_href_Index_ID").href = "index.html" + addedL;
+        }
+        if (currentPage != "DP") {
             document.getElementById("navBar_href_Data_ID").href = "DataPage.html" + addedL;
         }
-        document.getElementById("navBar_href_Contact_ID").href = "Contact.html" + addedL;
-        document.getElementById("navBar_href_About_ID").href = "AboutPage.html" + addedL;
-        document.getElementById("navBar_href_Login_ID").href = "Login.html" + addedL;
+        if (currentPage != "CP") {
+            document.getElementById("navBar_href_Contact_ID").href = "Contact.html" + addedL;
+        }
+        if (currentPage != "AP") {
+            document.getElementById("navBar_href_About_ID").href = "AboutPage.html" + addedL;
+        }
+        if (currentPage != "OP") {
+            document.getElementById("navBar_href_Login_ID").href = "Login.html" + addedL;
+        }
     }
     else if (currentPage == "OP") {
         document.getElementById("navBar_href_Index_ID").href = "index.html" + addedL;
