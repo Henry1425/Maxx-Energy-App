@@ -336,6 +336,38 @@ function toggleColorMode(thePage) {
         changeModes("D");
     }
     updateLinks();
+    updateCurrentURL();
+}
+
+//Updates url to match current mode in case of a refresh
+function updateCurrentURL() {
+    let stateObj;
+    let pName;
+    let pTitle;
+
+    if (currentPage == "LP") {
+        pName = "Index";
+        pTitle = "Home";
+    }
+    else if (currentPage == "DP") {
+        pName = "DataPage";
+        pTitle = "Data";
+    }
+    else if (currentPage == "CP") {
+        pName = "Contact";
+        pTitle = "Contact";
+    }
+    else if (currentPage == "AP") {
+        pName = "AboutPage";
+        pTitle = "About";
+    }
+    else if (currentPage == "OP") {
+        pName = "Login";
+        pTitle = "Login";
+    }
+
+    stateObj = { id: pName + "Page_ID" };
+    window.history.replaceState(stateObj, pTitle + "StateTitle", "/" + pName + ".html?cm=" + currentColorMode); 
 }
 
 //Applies color changes
