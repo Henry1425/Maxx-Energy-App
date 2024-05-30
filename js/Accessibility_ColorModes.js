@@ -592,7 +592,5 @@ function updateLinks() {
             document.getElementById("navBar_href_Login_ID").href = "Login.html" + addedL;
         }
     }
-    else if (currentPage == "OP") {
-        document.getElementById("navBar_href_Index_ID").href = "index.html" + addedL;
-    }
+    document.getElementById("Logo_href_Index_ID").href = "index.html" + addedL;
 }
