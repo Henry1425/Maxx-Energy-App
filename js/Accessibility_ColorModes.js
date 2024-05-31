@@ -8,11 +8,11 @@ var LP_changedElements = [
     "navBar_href_About_ID",
     "navBar_href_Login_ID",
 
-    // "cardModal_ID",
-    // "cardModal_Stuff_A",
-    // "cardModal_Stuff_B",
-    // "cardModal_Stuff_C",
-
+    "cardModal_ID",
+    "cardModal_Stuff_A", "cardModal_Ext_A",
+    "cardModal_Stuff_B", "cardModal_Ext_B",
+    "cardModal_Stuff_C", "cardModal_Ext_C",
+    "modalCloseBtn_ID",
     "centerPage_ID",
 
     "cp_cs_ID", "cp_csh_ID", "cp_csp_ID", "cp_csb_ID", "cp_csBtn_ID",
@@ -38,6 +38,9 @@ var LP_changedElements_borders = [
     "navBar_Btn_About_ID",
     "navBar_Btn_Login_ID",
 
+    "cardModal_Ext_A", "cardModal_Ext_B", "cardModal_Ext_C",
+    "modalCloseBtn_ID",
+    
     "cp_cs_ID", "cp_csBtn_ID",
     "cp_csA_ID", "cp_csBtnA_ID",
     "cp_csB_ID", "cp_csBtnB_ID",
