@@ -47,19 +47,19 @@ list-style: none;
   background: transparent;
   border: 2px solid #0099CC;
   border-radius: 6px;
- /* border: none;*/
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
-    text-transform: uppercase;
+  /* border: none;*/
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 a {
   text-decoration: none;
@@ -68,14 +68,17 @@ a {
 
 /* Added Background Image to Landing Page */
 body {
-background-image: url(../images/background-Image.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
-background-size: cover;
+  background-image: url(../images/background-Image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 
-position:absolute;
-top:0; bottom:0; right:0; left:0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 header {
@@ -93,46 +96,44 @@ img {
 }
 
 
-footer  {
+footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-    width: 75%;
-   height: 25%;
-   margin: auto;
-   background-color: rgba(126, 143, 159, 0.514);
-  color:  white;
+  width: 75%;
+  height: 30%;
+  margin: auto;
+  background-color: rgba(126, 143, 159, 0.514);
+  color: white;
   margin-top: 20%;
 }
+.one {
+  width: 33%;
+  /* height: 200px; */
+  /* margin-right: 15px; */
+  /* background: white; */
+  text-align: center;
+}
 
-    .one {
-       width:  33%;
-       /* height: 200px; */
-       /* margin-right: 15px; */
-       /* background: white; */
-       text-align: center;
-   }
+.contactlinks {
+  display: flex;
+  justify-content: center;
+  padding: auto;
+  list-style: none;
+}
 
-   .contactlinks {
-      display: flex;
-      justify-content: center;
-      padding: auto;
-      list-style: none;
-   }
+.two {
+  width: 33%;
+  /* height: 100px; */
+  /* margin-right: 15px; */
+  /* background:white; */
+  text-align: center;
+}
 
-   .two {
-       width: 33%;
-       /* height: 100px; */
-       /* margin-right: 15px; */
-       /* background:white; */
-       text-align: center;
-   }
-
-   .three {
-       width: 33%;
-       /* height: 100px; */
-       /* background:white; */
-       text-align: center;
-       /* float: right; */
-   }
-
+.three {
+  width: 33%;
+  /* height: 100px; */
+  /* background:white; */
+  text-align: center;
+  /* float: right; */
+}
