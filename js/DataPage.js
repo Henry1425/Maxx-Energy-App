@@ -6,51 +6,28 @@ const ExtraID = "Graphs_BB_ID";     //div
 
 
 function changeData_DCP() {
-    //DC Power
-    demoTestFunction("DCP");//temp
+    fetch("/txt/DCP.txt").then(res => res.text()).then(text => assignData(text));
 }
 
 
 function changeData_ACP() {
-    //AC Power
-    demoTestFunction("ACP");//temp
+    fetch("/txt/ACP.txt").then(res => res.text()).then(text => assignData(text));
 }
 
 
 function changeData_DY() {
-    //Daily Yield Power
-    demoTestFunction("DY");//temp
+    fetch("/txt/DY.txt").then(res => res.text()).then(text => assignData(text));
 }
 
 
 function changeData_TY() {
-    //Total Yield Power
-    demoTestFunction("TY");//temp
+    fetch("/txt/TY.txt").then(res => res.text()).then(text => assignData(text));
 }
 
-function demoTestFunction(type) {
-    if (type == "DCP") {
-        document.getElementById(TitleID).innerHTML = "DC Power";
-        document.getElementById(GraphID).src = "images/SampleData/Graph_DCP.jpg";
-        document.getElementById(DescID).innerHTML = "Comparison between the two plants in DC Power production from May 15 - June 17, 2020";
-        document.getElementById(ExtraID).innerHTML = "Extra DCP";
-    }
-    else if (type == "ACP") {
-        document.getElementById(TitleID).innerHTML = "AC Power";
-        document.getElementById(GraphID).src = "images/SampleData/Graph_ACP.jpg";
-        document.getElementById(DescID).innerHTML = "Comparison between the two plants in AC Power production from May 15 - June 17, 2020";
-        document.getElementById(ExtraID).innerHTML = "Extra ACP";
-    }
-    else if (type == "DY") {
-        document.getElementById(TitleID).innerHTML = "Daily Yield";
-        document.getElementById(GraphID).src = "images/SampleData/Graph_DY.jpg";
-        document.getElementById(DescID).innerHTML = "Power Produced Daily From May 15, 2020 to Jun 17, 2020";
-        document.getElementById(ExtraID).innerHTML = "Extra DY";
-    }
-    else if (type == "TY") {
-        document.getElementById(TitleID).innerHTML = "Total Yield";
-        document.getElementById(GraphID).src = "images/SampleData/Graph_TY.jpg";
-        document.getElementById(DescID).innerHTML = "Total";
-        document.getElementById(ExtraID).innerHTML = "Extra TY";
-    }
+function assignData(someData) {
+    let someNewData = someData.split("<seperator>");
+    document.getElementById(TitleID).innerHTML = someNewData[0];
+    document.getElementById(GraphID).src = someNewData[1];
+    document.getElementById(DescID).innerHTML = someNewData[2];
+    document.getElementById(ExtraID).innerHTML = someNewData[3];
 }
