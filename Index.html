@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <meta charset="ISO-8859-1" />
     <title>Home Page</title>
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./styles/skeleton.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
     <link rel="stylesheet" type="text/css" href="./styles/Styles.css" />
 
     <link rel="stylesheet" type="text/css" href="./styles/Cards_LP.css" />
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
 
-    <link rel="stylesheet" type="text/css" href="./styles/Accessibility_ColorModes.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./styles/Accessibility_ColorModes.css"
+    />
 
-    <script type="text/javascript" src="./js/Cards_LP.js"></script> />
+    <script type="text/javascript" src="./js/Cards_LP.js"></script>
+    />
 
-    <script type="text/javascript" src="./js/Accessibility_ColorModes.js"></script> />
-
+    <script
+      type="text/javascript"
+      src="./js/Accessibility_ColorModes.js"
+    ></script>
+    />
   </head>
 
   <body>
-    <button id="tcbID" class="toggleColorBtn" value="LP" onclick="toggleColorMode(this.value)">Default</button>
+    <!-- <div class="container" -->
+    <button
+      id="tcbID"
+      class="toggleColorBtn"
+      value="LP"
+      onclick="toggleColorMode(this.value)"
+    >
+      Default
+    </button>
     <header>
       <img src="images/MPG-Image.jpg" alt="MPG Company Logo" />
       <nav aria-label="Main navigation" class="navbar" id="navBar_ID">
         <ul>
           <li>
-            <button class="btn" id="navBar_Btn_Index_ID"><a id="navBar_href_Index_ID" href="index.html">Home</a></button>
+            <button class="btn" id="navBar_Btn_Index_ID">
+              <a id="navBar_href_Index_ID" href="index.html">Home</a>
+            </button>
           </li>
           <li>
-            <button class="btn" id="navBar_Btn_Data_ID"><a id="navBar_href_Data_ID" href="DataPage.html">Data</a></button>
+            <button class="btn" id="navBar_Btn_Data_ID">
+              <a id="navBar_href_Data_ID" href="DataPage.html">Data</a>
+            </button>
           </li>
           <li>
-            <button class="btn" id="navBar_Btn_Contact_ID"><a id="navBar_href_Contact_ID" href="Contact.html">Contact</a></button>
+            <button class="btn" id="navBar_Btn_Contact_ID">
+              <a id="navBar_href_Contact_ID" href="Contact.html">Contact</a>
+            </button>
           </li>
           <li>
-            <button class="btn" id="navBar_Btn_About_ID"><a id="navBar_href_About_ID" href="AboutPage.html">About</a></button>
+            <button class="btn" id="navBar_Btn_About_ID">
+              <a id="navBar_href_About_ID" href="AboutPage.html">About</a>
+            </button>
           </li>
           <li>
-            <button class="btn" id="navBar_Btn_Login_ID"><a id="navBar_href_Login_ID" href="Login.html">Login</a></button>
+            <button class="btn" id="navBar_Btn_Login_ID">
+              <a id="navBar_href_Login_ID" href="Login.html">Login</a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -62,9 +95,7 @@
     </div>
     <div class="CenterPage" id="centerPage_ID">
       <div class="card_Row">
-
         <div class="card_Column">
-    
           <div class="card_Sample_A" id="cp_csA_ID">
             <div class="card_Sample_A_i">
               <img src="./images/SampleImage_A.jpg" />
@@ -73,8 +104,11 @@
               <h1 id="cp_cshA_ID">Company Title</h1>
             </div>
             <div class="card_Sample_A_p">
-              <p id="cp_cspA_ID">A general description of the company or somthing relating to it. Anything at all at this point.
-                This is just sample text for testing purposes.</p>
+              <p id="cp_cspA_ID">
+                A general description of the company or somthing relating to it.
+                Anything at all at this point. This is just sample text for
+                testing purposes.
+              </p>
             </div>
             <div class="card_Sample_A_b" id="cp_csAb_ID">
               <button
@@ -86,7 +120,7 @@
               </button>
             </div>
           </div>
-    
+
           <div class="card_Sample_B" id="cp_csB_ID">
             <div class="card_Sample_B_i">
               <img src="./images/SampleImage_C.jpg" />
@@ -107,11 +141,9 @@
               </button>
             </div>
           </div>
-          
         </div>
-    
-        <div class="card_Column">
 
+        <div class="card_Column">
           <div class="card_Sample_C" id="cp_csC_ID">
             <div class="card_Sample_C_i">
               <img src="./images/SampleImage_B.jpg" />
@@ -120,9 +152,11 @@
               <h1 id="cp_cshC_ID">Difficult to read this</h1>
             </div>
             <div class="card_Sample_C_p">
-              <p id="cp_cspC_ID">abcdefghijk... something, something, something/?</p>
+              <p id="cp_cspC_ID">
+                abcdefghijk... something, something, something/?
+              </p>
             </div>
-            <div class="card_Sample_C_b"  id="cp_csCb_ID">
+            <div class="card_Sample_C_b" id="cp_csCb_ID">
               <button
                 id="cp_csBtnC_ID"
                 value="<div class='Modal_Sample_C_A'><b>Example</b></div>/-/<div class='Modal_Sample_C_B'><i>Pop ups can have their styles edited too</i></div>/-/<div class='Modal_Sample_C_C'>s.a/m(p:l,e</div>/-/Index.html"
@@ -132,7 +166,7 @@
               </button>
             </div>
           </div>
-    
+
           <div class="card_Sample_D" id="cp_csD_ID">
             <div class="card_Sample_D_i">
               <img src="./images/BlankSampleImage.jpg" />
@@ -141,23 +175,24 @@
               <h1 id="cp_cshD_ID">Header</h1>
             </div>
             <div class="card_Sample_D_p">
-              <p id="cp_cspD_ID">More info: 1 2 3 4 5 6 7 8 9 10 11 12 13 14
-                15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40</p>
+              <p id="cp_cspD_ID">
+                More info: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+                22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+              </p>
             </div>
             <div class="card_Sample_D_b" id="cp_csDb_ID">
               <button
                 id="cp_csBtnD_ID"
                 value="Card/Modal/-/<b>Slide animation was made using webkit</b>/-/Link/-/Index.html"
-                onclick="open_cardModal(this.value)">
+                onclick="open_cardModal(this.value)"
+              >
                 Learn More
               </button>
             </div>
           </div>
-          
         </div>
-    
-        <div class="card_Column">
 
+        <div class="card_Column">
           <div class="card_Sample_E" id="cp_csE_ID">
             <div class="card_Sample_E_i">
               <img src="./images/SampleImage_D.jpg" />
@@ -166,12 +201,13 @@
               <h1 id="cp_cshE_ID">A Battery</h1>
             </div>
             <div class="card_Sample_E_p">
-              <p id="cp_cspE_ID">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+              <p id="cp_cspE_ID">
+                a b c d e f g h i j k l m n o p q r s t u v w x y z
+              </p>
             </div>
-            <div class="card_Sample_E_b">
-            </div>
+            <div class="card_Sample_E_b"></div>
           </div>
-    
+
           <div class="card_plain" id="cp_cs_ID">
             <div class="cardPlain_i">
               <img src="./images/SampleImage_E.jpg" />
@@ -192,9 +228,7 @@
               </button>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
 
@@ -213,7 +247,8 @@
       <section class="two">
         <h3>Products</h3>
         <li class="contactlinks">
-          <a id="footer_P_A_ID"
+          <a
+            id="footer_P_A_ID"
             href="https://www.electricgeneratorsdirect.com/Generac-Guardian-7291-SD-Standby-Generator/p138539.html"
             >Generaters</a
           >

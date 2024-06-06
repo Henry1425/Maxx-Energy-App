@@ -53,6 +53,11 @@ justify-content: center;
 list-style:none;
 }
 
+li {
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
 .btn {
 
   color: #0099CC;
@@ -66,6 +71,9 @@ list-style:none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
@@ -81,6 +89,13 @@ a {
 /* .background {
   background-image: url(../images/background-Image.jpg);
 } */
+.contact {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: top 10px;
+    margin-bottom: 10px;
+}
 
 .formarea {
   width: 75%;
@@ -109,7 +124,7 @@ input[type=text], select, textarea {
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
-  padding: 12px 20px;
+  /* padding: 12px 20px; */
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -129,7 +144,7 @@ footer  {
   flex-direction: row;
   justify-content: center;
     width: 75%;
-   height: 30%;
+   height: 40%;
    margin: auto;
    background-color: rgba(126, 143, 159, 0.514);
   color:  white;

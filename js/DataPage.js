@@ -7,50 +7,79 @@ const ExtraID = "Graphs_BB_ID";     //div
 
 function changeData_DCP() {
     //DC Power
-    demoTestFunction("DCP");//temp
+    // demoTestFunction("DCP");//temp
 }
 
 
 function changeData_ACP() {
     //AC Power
-    demoTestFunction("ACP");//temp
+    // demoTestFunction("ACP");//temp
 }
 
 
 function changeData_DY() {
     //Daily Yield Power
-    demoTestFunction("DY");//temp
+    // demoTestFunction("DY");//temp
 }
 
 
 function changeData_TY() {
     //Total Yield Power
-    demoTestFunction("TY");//temp
+    // demoTestFunction("TY");//temp
 }
 
-function demoTestFunction(type) {
-    if (type == "DCP") {
-        document.getElementById(TitleID).innerHTML = "DC Power";
-        document.getElementById(GraphID).src = "images/SampleData/Graph_DCP.jpg";
-        document.getElementById(DescID).innerHTML = "Comparison between the two plants in DC Power production from May 15 - June 17, 2020";
-        document.getElementById(ExtraID).innerHTML = "Extra DCP";
-    }
-    else if (type == "ACP") {
-        document.getElementById(TitleID).innerHTML = "AC Power";
-        document.getElementById(GraphID).src = "images/SampleData/Graph_ACP.jpg";
-        document.getElementById(DescID).innerHTML = "Comparison between the two plants in AC Power production from May 15 - June 17, 2020";
-        document.getElementById(ExtraID).innerHTML = "Extra ACP";
-    }
-    else if (type == "DY") {
-        document.getElementById(TitleID).innerHTML = "Daily Yield";
-        document.getElementById(GraphID).src = "images/SampleData/Graph_DY.jpg";
-        document.getElementById(DescID).innerHTML = "Power Produced Daily From May 15, 2020 to Jun 17, 2020";
-        document.getElementById(ExtraID).innerHTML = "Extra DY";
-    }
-    else if (type == "TY") {
-        document.getElementById(TitleID).innerHTML = "Total Yield";
-        document.getElementById(GraphID).src = "images/SampleData/Graph_TY.jpg";
-        document.getElementById(DescID).innerHTML = "Total";
-        document.getElementById(ExtraID).innerHTML = "Extra TY";
-    }
-}
+// function demoTestFunction(type) {
+//     if (type == "DCP") {
+//         document.getElementById(TitleID).innerHTML = "DC Power";
+//         document.getElementById(GraphID).src = "images/SampleData/Graph_DCP.jpg";
+//         document.getElementById(DescID).innerHTML = "Comparison between the two plants in DC Power production from May 15 - June 17, 2020";
+//         document.getElementById(ExtraID).innerHTML = "Extra DCP";
+//     }
+//     else if (type == "ACP") {
+//         document.getElementById(TitleID).innerHTML = "AC Power";
+//         document.getElementById(GraphID).src = "images/SampleData/Graph_ACP.jpg";
+//         document.getElementById(DescID).innerHTML = "Comparison between the two plants in AC Power production from May 15 - June 17, 2020";
+//         document.getElementById(ExtraID).innerHTML = "Extra ACP";
+//     }
+//     else if (type == "DY") {
+//         document.getElementById(TitleID).innerHTML = "Daily Yield";
+//         document.getElementById(GraphID).src = "images/SampleData/Graph_DY.jpg";
+//         document.getElementById(DescID).innerHTML = "Power Produced Daily From May 15, 2020 to Jun 17, 2020";
+//         document.getElementById(ExtraID).innerHTML = "Extra DY";
+//     }
+//     else if (type == "TY") {
+//         document.getElementById(TitleID).innerHTML = "Total Yield";
+//         document.getElementById(GraphID).src = "images/SampleData/Graph_TY.jpg";
+//         document.getElementById(DescID).innerHTML = "Total";
+//         document.getElementById(ExtraID).innerHTML = "Extra TY";
+//     }
+// }
+
+document.getElementById('DN_DC_ID').addEventListener('click', function () {
+    fetch('http://localhost:3000/maxgen_power')
+        .then(response => response.json())
+        .then(data => {
+            // Process the data here
+            console.log(data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+});
+
+//     var button = document.getElementById('dc-button');
+//     if (button) {
+//         button.addEventListener('click', function () {
+//             fetch('http://localhost:3000/getData')
+//                 .then(response => response.json())
+//                 .then(data => {
+//                     // Process the data here
+//                     console.log(data);
+
+//                 })
+//                 .catch((error) => {
+//                     console.error('Error:', error);
+//                 });
+//         });
+//     }
+// }

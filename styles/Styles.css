@@ -1,53 +1,56 @@
-
 html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 /* background for navbar */
 .navbar {
-    background-color: rgba(126, 143, 159, 0.514);
-  }
-
+  background-color: rgba(126, 143, 159, 0.514);
+}
 
 /* Lining up the navagation links */
 ul {
-display: flex;
-flex-direction: row;
-justify-content: center;
-list-style:none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+li {
+  margin-top: 7px;
+  margin-bottom: 5px;
 }
 
 .btn {
-
-    color: #0099CC;
-    background: transparent;
-    border: 2px solid #0099CC;
-    border-radius: 6px;
-   /* border: none;*/
-      color: white;
-      padding: 16px 32px;
-      text-align: center;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      -webkit-transition-duration: 0.4s;
-      /* Safari */
-      transition-duration: 0.4s;
-      cursor: pointer;
-      text-decoration: none;
-      text-transform: uppercase;
+  color: #0099cc;
+  background: transparent;
+  border: 2px solid #0099cc;
+  border-radius: 6px;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 img {
-    width: 15%;
-    height: 63%;
-    float: left;
-
-  }
+  width: 15%;
+  height: 63%;
+  float: left;
+}
 
 a {
-    text-decoration: none;
-    color:aqua
+  text-decoration: none;
+  color: aqua;
 }
 
 /* Added Background Image to Landing Page */
@@ -57,81 +60,93 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  position:absolute;
-  top:0; bottom:0; right:0; left:0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
+/* .container {
+    width: 80%;
+    margin: 0 auto;
+  } */
+
 header {
-    width: 90%;
-    height: 100px;
-    /*background-color: rgba(200, 0, 0, 0.5);*/ /* Temporary (helps determine size/location) */
-    text-align: center;
+  width: 90%;
+  height: 100px;
+  /*background-color: rgba(200, 0, 0, 0.5);*/ /* Temporary (helps determine size/location) */
+  text-align: center;
 }
 
 .PageLinks {
-    width: 100%;
-    height: 5%;
-    background-color: rgba(200, 200, 0, 0.5); /*Temporary (helps determine size/location)*/
-    text-align: center;
+  width: 100%;
+  height: 5%;
+  background-color: rgba(
+    200,
+    200,
+    0,
+    0.5
+  ); /*Temporary (helps determine size/location)*/
+  text-align: center;
 }
-
-
 
 /*Body*/
 .CenterPage {
-    /*  */
-    width: 75%;
-    height: 80%;
-    background-color: rgba(255, 255, 255, 0.1);
-    text-align: center;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* border-radius: 0 0 5px 5px; */
+  /*  */
+  width: 75%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border-radius: 0 0 5px 5px; */
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  height: 30vh;
+  margin: auto;
+  background-color: rgba(126, 143, 159, 0.514);
+  color: white;
+}
 
+.one {
+  width: 33%;
+  /* height: 200px; */
+  /* margin-right: 15px; */
+  /* background: white; */
+  text-align: center;
+}
 
-footer  {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-      width: 75%;
-     height: 30%;
-     margin: auto;
-     background-color: rgba(126, 143, 159, 0.514);
-    color:  white;
- }
+.contactlinks {
+  display: flex;
+  justify-content: center;
+  padding: auto;
+  list-style: none;
+}
 
-      .one {
-         width:  33%;
-         /* height: 200px; */
-         /* margin-right: 15px; */
-         /* background: white; */
-         text-align: center;
-     }
+.two {
+  width: 33%;
+  /* height: 100px; */
+  /* margin-right: 15px; */
+  /* background:white; */
+  text-align: center;
+}
 
-     .contactlinks {
-        display: flex;
-        justify-content: center;
-        padding: auto;
-        list-style: none;
-     }
+.three {
+  width: 33%;
+  /* height: 100px; */
+  /* background:white; */
+  text-align: center;
+  /* float: right; */
+}
 
-     .two {
-         width: 33%;
-         /* height: 100px; */
-         /* margin-right: 15px; */
-         /* background:white; */
-         text-align: center;
-     }
-
-     .three {
-         width: 33%;
-         /* height: 100px; */
-         /* background:white; */
-         text-align: center;
-         /* float: right; */
-     }
-
+h3 {
+  margin-bottom: 0;
+}
