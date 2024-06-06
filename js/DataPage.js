@@ -8,24 +8,36 @@ const ExtraID = "Graphs_BB_ID";     //div
 function changeData_DCP() {
     //DC Power
     // demoTestFunction("DCP");//temp
+    fetch("/txt/DCP.txt").then(res => res.text()).then(text => assignData(text));
 }
 
 
 function changeData_ACP() {
     //AC Power
     // demoTestFunction("ACP");//temp
+    fetch("/txt/ACP.txt").then(res => res.text()).then(text => assignData(text));
 }
 
 
 function changeData_DY() {
     //Daily Yield Power
     // demoTestFunction("DY");//temp
+    fetch("/txt/DY.txt").then(res => res.text()).then(text => assignData(text));
 }
 
 
 function changeData_TY() {
     //Total Yield Power
     // demoTestFunction("TY");//temp
+    fetch("/txt/TY.txt").then(res => res.text()).then(text => assignData(text));
+}
+
+function assignData(someData) {
+    let someNewData = someData.split("<seperator>");
+    document.getElementById(TitleID).innerHTML = someNewData[0];
+    document.getElementById(GraphID).src = someNewData[1];
+    document.getElementById(DescID).innerHTML = someNewData[2];
+    document.getElementById(ExtraID).innerHTML = someNewData[3];
 }
 
 // function demoTestFunction(type) {
