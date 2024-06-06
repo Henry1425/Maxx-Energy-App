@@ -62,6 +62,8 @@
     height: 100%;
     cursor: pointer;
     border: 1px inset black;
+    background-color: rgba(255, 255, 255, .5);
+    color: white;
 }
 
 @-webkit-keyframes slideIn {
