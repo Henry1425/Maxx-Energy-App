@@ -21,7 +21,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="./styles/normalize.css" /> -->
     <title>About Page</title>
   </head>
-  <body>
+  <body onload="onloadPageForColorMode('AP')">
     <button
       id="tcbID"
       class="toggleColorBtn"
@@ -31,8 +31,12 @@
       Default
     </button>
     <header>
-      <a href="index.html"
-        ><img src="images/MPG-Image.jpg" alt="MPG Company Logo" />
+      <a href="index.html" id="Logo_href_Index_ID">
+        <img
+          src="images/MPG-Image.jpg"
+          alt="MPG Company Logo"
+          id="LogoIcon_ID"
+        />
       </a>
       <nav aria-label="Main navigation" class="navbar" id="navBar_ID">
         <ul>
@@ -52,11 +56,6 @@
             </button>
           </li>
           <li>
-            <button class="btn" id="navBar_Btn_About_ID">
-              <a id="navBar_href_About_ID" href="AboutPage.html">About</a>
-            </button>
-          </li>
-          <li>
             <button class="btn" id="navBar_Btn_Login_ID">
               <a id="navBar_href_Login_ID" href="Login.html">Login</a>
             </button>
@@ -64,7 +63,7 @@
         </ul>
       </nav>
     </header>
-    <h1 class="title">About MAXPROGEN</h1>
+    <h1 class="title" id="aboutMax_Title_ID">About MAXPROGEN</h1>
     <!-- <div class="navbar">
       <ul>
         <li>

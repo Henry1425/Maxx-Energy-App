@@ -24,17 +24,14 @@
     />
 
     <script type="text/javascript" src="./js/Cards_LP.js"></script>
-    />
 
     <script
       type="text/javascript"
       src="./js/Accessibility_ColorModes.js"
     ></script>
-    />
   </head>
 
-  <body>
-    <!-- <div class="container" -->
+  <body onload="onloadPageForColorMode('LP')">
     <button
       id="tcbID"
       class="toggleColorBtn"
@@ -44,14 +41,15 @@
       Default
     </button>
     <header>
-      <img src="images/MPG-Image.jpg" alt="MPG Company Logo" />
+      <a href="index.html" id="Logo_href_Index_ID">
+        <img
+          src="images/MPG-Image.jpg"
+          alt="MPG Company Logo"
+          id="LogoIcon_ID"
+        />
+      </a>
       <nav aria-label="Main navigation" class="navbar" id="navBar_ID">
         <ul>
-          <li>
-            <button class="btn" id="navBar_Btn_Index_ID">
-              <a id="navBar_href_Index_ID" href="index.html">Home</a>
-            </button>
-          </li>
           <li>
             <button class="btn" id="navBar_Btn_Data_ID">
               <a id="navBar_href_Data_ID" href="DataPage.html">Data</a>
@@ -77,28 +75,30 @@
     </header>
 
     <div class="cardModal" id="cardModal_ID">
-      <div style="background-color: rgba(255, 255, 255, 0.75)">
+      <div id="cardModal_Ext_A">
         <br />
         <header id="cardModal_Stuff_A">Something didn't work</header>
       </div>
-      <div style="background-color: rgba(255, 255, 255, 1)">
+      <div id="cardModal_Ext_B">
         <p id="cardModal_Stuff_B">Probally something wrong on JavaScript end</p>
       </div>
-      <div style="background-color: rgba(255, 255, 255, 1)">
+      <div id="cardModal_Ext_C">
         <br />
 
         <div class="modalFooter" style="border: 0px inset black; height: 200%">
           <a id="cardModal_Stuff_C" href="">What happened?</a>
         </div>
       </div>
-      <div><button onclick="close_cardModal()">Close</button></div>
+      <div>
+        <button onclick="close_cardModal()" id="modalCloseBtn_ID">Close</button>
+      </div>
     </div>
     <div class="CenterPage" id="centerPage_ID">
       <div class="card_Row">
         <div class="card_Column">
           <div class="card_Sample_A" id="cp_csA_ID">
             <div class="card_Sample_A_i">
-              <img src="./images/SampleImage_A.jpg" />
+              <img src="./images/SampleImages/SampleImage_A.jpg" />
             </div>
             <div class="card_Sample_A_h">
               <h1 id="cp_cshA_ID">Company Title</h1>
@@ -123,7 +123,7 @@
 
           <div class="card_Sample_B" id="cp_csB_ID">
             <div class="card_Sample_B_i">
-              <img src="./images/SampleImage_C.jpg" />
+              <img src="./images/SampleImages/SampleImage_C.jpg" />
             </div>
             <div class="card_Sample_B_h">
               <h1 id="cp_cshB_ID">This is just a random sample template</h1>
@@ -146,7 +146,7 @@
         <div class="card_Column">
           <div class="card_Sample_C" id="cp_csC_ID">
             <div class="card_Sample_C_i">
-              <img src="./images/SampleImage_B.jpg" />
+              <img src="./images/SampleImages/SampleImage_B.jpg" />
             </div>
             <div class="card_Sample_C_h">
               <h1 id="cp_cshC_ID">Difficult to read this</h1>
@@ -169,7 +169,7 @@
 
           <div class="card_Sample_D" id="cp_csD_ID">
             <div class="card_Sample_D_i">
-              <img src="./images/BlankSampleImage.jpg" />
+              <img src="./images/SampleImages/BlankSampleImage.jpg" />
             </div>
             <div class="card_Sample_D_h">
               <h1 id="cp_cshD_ID">Header</h1>
@@ -195,7 +195,7 @@
         <div class="card_Column">
           <div class="card_Sample_E" id="cp_csE_ID">
             <div class="card_Sample_E_i">
-              <img src="./images/SampleImage_D.jpg" />
+              <img src="./images/SampleImages/SampleImage_D.jpg" />
             </div>
             <div class="card_Sample_E_h">
               <h1 id="cp_cshE_ID">A Battery</h1>
@@ -210,7 +210,7 @@
 
           <div class="card_plain" id="cp_cs_ID">
             <div class="cardPlain_i">
-              <img src="./images/SampleImage_E.jpg" />
+              <img src="./images/SampleImages/SampleImage_E.jpg" />
             </div>
             <div class="cardPlain_h">
               <h1 id="cp_csh_ID">123</h1>

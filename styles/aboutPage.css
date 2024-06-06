@@ -76,14 +76,17 @@ a {
 
 /* Added Background Image to Landing Page */
 body {
-background-image: url(../images/background-Image.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
-background-size: cover;
+  background-image: url(../images/background-Image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 
-position:absolute;
-top:0; bottom:0; right:0; left:0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 header {
@@ -101,7 +104,7 @@ img {
 }
 
 
-footer  {
+footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -112,29 +115,28 @@ footer  {
   color:  white;
   margin-top: 20%;
 }
+.one {
+  width: 33%;
+  /* height: 200px; */
+  /* margin-right: 15px; */
+  /* background: white; */
+  text-align: center;
+}
 
-    .one {
-       width:  33%;
-       /* height: 200px; */
-       /* margin-right: 15px; */
-       /* background: white; */
-       text-align: center;
-   }
+.contactlinks {
+  display: flex;
+  justify-content: center;
+  padding: auto;
+  list-style: none;
+}
 
-   .contactlinks {
-      display: flex;
-      justify-content: center;
-      padding: auto;
-      list-style: none;
-   }
-
-   .two {
-       width: 33%;
-       /* height: 100px; */
-       /* margin-right: 15px; */
-       /* background:white; */
-       text-align: center;
-   }
+.two {
+  width: 33%;
+  /* height: 100px; */
+  /* margin-right: 15px; */
+  /* background:white; */
+  text-align: center;
+}
 
    .three {
        width: 33%;

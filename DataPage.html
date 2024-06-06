@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+
     <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8" />
@@ -30,21 +31,23 @@
 
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="text/javascript" src="./js/Accessibility_ColorModes.js"></script> />
+    <script type="text/javascript" src="./js/Accessibility_ColorModes.js"></script>
 
-
+    <script type="text/javascript" src="./js/DataPage.js"></script>
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="icon" type="image/x-icon" href="./images/Icon_Alts/Favicon.jpg"/>
   </head>
-<body>
+<body onload="onloadPageForColorMode('DP')">
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <button id="tcbID" class="toggleColorBtn" value="DP" onclick="toggleColorMode(this.value)">Default</button>
-    <header>
+    <header id="dp_header_ID">
       <!-- Noman doing main NavBar Home,Contact,About & Login Here   -->
-      <img src="images/MPG-Image.jpg" alt="MPG Company Logo" style="width: 42%">
+      <a href="index.html" id="Logo_href_Index_ID">
+        <img src="images/MPG-Image.jpg" alt="MPG Company Logo" style="width: 42%" id="LogoIcon_ID">
+      </a>
         <nav aria-label="Main navigation" class="navbar">
           <ul id="navBar_ID">
             <li><a id="navBar_href_Index_ID" class="active" href="Index.html">Home</a></li>
@@ -83,7 +86,7 @@
             Title
           </div>
           <div class="Graphs_AB" id="Graphs_AB_ID">
-            <img src="images/SampleImage_Graph_A.jpg" id="Graphs_AB_Img_ID"/>
+            <img src="images/SampleImages/SampleImage_Graph_A.jpg" id="Graphs_AB_Img_ID"/>
           </div>
         </div>
         <div class="Graphs_Col">

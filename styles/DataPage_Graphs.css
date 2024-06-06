@@ -21,42 +21,58 @@
     height: 95%;
 }
 .Graphs_AA {
-    width: 95%;
-    height: 15%;
-    background-color: rgba(130, 130, 130, 1);
+    width: 94%;
+    height: 14%;
+    background-color: rgba(225, 225, 225, .97);
     margin: auto;
     border: 1px inset black;
     font-family:"Calibri", sans-serif;
     font-weight: bold;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Graphs_AB {
-    width: 95%;
-    height: 75%;
-    background-color: rgba(130, 130, 130, 1);
+    width: 94%;
+    height: 74%;
+    background-color: rgba(150, 150, 150, .97);
     margin: auto;
     border: 1px inset black;
     font-family:"Calibri", sans-serif;
     font-weight: bold;
+    padding: 1%;
 }
 .Graphs_AB img {
     width: 100%;
     height: 100%;
 }
 .Graphs_BA {
-    width: 95%;
-    height: 45%;
-    background-color: rgba(130, 130, 130, 1);
+    width: 94%;
+    height: 44%;
+    background-color: rgba(250, 250, 250, .97);
     margin: auto;
     border: 1px inset black;
     font-family:"Calibri", sans-serif;
     font-weight: bold;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Graphs_BB {
-    width: 95%;
-    height: 45%;
-    background-color: rgba(130, 130, 130, 1);
+    width: 94%;
+    height: 44%;
+    background-color: rgba(250, 250, 250, .97);
     margin: auto;
     border: 1px inset black;
     font-family:"Calibri", sans-serif;
     font-weight: bold;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

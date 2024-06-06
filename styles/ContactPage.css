@@ -119,6 +119,23 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  color: black;
+}
+
+select option {
+  color: black;
+}
+.ph_D::placeholder {
+  color: black;
+  opacity: 1;
+}
+.ph_DM::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.ph_LM::placeholder {
+  color: #4f4f4f;
+  opacity: 1;
 }
 
 input[type=submit] {
