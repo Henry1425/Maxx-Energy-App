@@ -218,6 +218,7 @@
 .card_Sample_A_p p {
     font-style: italic;
     font-size: 7.5px;
+    color: white;
 }
 
 .card_Sample_A_b {
@@ -227,7 +228,7 @@
 }
 .card_Sample_A_b button {
     border: red;
-    border-style: dotted dashed solid double;
+    /* border-style: dotted dashed solid double; */
     color:yellow;
     background-color: blue;
     border-radius: 10px;
@@ -344,7 +345,7 @@
     height: 20%;
 }
 .card_Sample_C_p p {
-    color: red;
+    color: green;
     font-style: italic;
     font-size: 7.5px;
 }
@@ -356,7 +357,7 @@
 }
 .card_Sample_C_b button {
     border: yellow;
-    border-style: dashed;
+    /* border-style: dashed; */
     font-style: italic;
     color: white;
     background-color: purple;
